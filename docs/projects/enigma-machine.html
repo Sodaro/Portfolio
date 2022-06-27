@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-b113c097.css">
+	<link rel="modulepreload" href="/_app/start-54d1a778.js">
+	<link rel="modulepreload" href="/_app/chunks/index-336a1d25.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-16dddcdf.js">
+	<link rel="modulepreload" href="/_app/pages/projects/enigma-machine.md-6209be0f.js">
+	</head>
+	<body>
+		<div>
+
+
+<div class="min-h-screen"><div class="container mx-auto pt-10"><header></header></div>
+  <p><strong>Engima Machine</strong></p>
+<img src="/enigmamachine.png" width="200" height="100">
+<p><img src="/enigmamachine.png" alt="Alt Text" title="Title"></p>
+<pre class="language-cpp"><!-- HTML_TAG_START --><code class="language-cpp">
+<span class="token function">UENUM</span><span class="token punctuation">(</span>BlueprintType<span class="token punctuation">)</span>
+<span class="token keyword">enum</span> <span class="token class-name">RingPosition</span>
+<span class="token punctuation">&#123;</span>
+	LEFT <span class="token function">UMETA</span><span class="token punctuation">(</span>DisplayName <span class="token operator">=</span> <span class="token string">"LEFT"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+	MID <span class="token function">UMETA</span><span class="token punctuation">(</span>DisplayName <span class="token operator">=</span> <span class="token string">"MID"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+	RIGHT <span class="token function">UMETA</span><span class="token punctuation">(</span>DisplayName <span class="token operator">=</span> <span class="token string">"RIGHT"</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token function">USTRUCT</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">struct</span> <span class="token class-name">FLetterComponents</span>
+<span class="token punctuation">&#123;</span>
+	<span class="token function">GENERATED_BODY</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+	<span class="token function">UPROPERTY</span><span class="token punctuation">(</span>EditInstanceOnly<span class="token punctuation">)</span>
+	AMachineLamp<span class="token operator">*</span> Lamp<span class="token punctuation">;</span>
+	<span class="token function">UPROPERTY</span><span class="token punctuation">(</span>EditInstanceOnly<span class="token punctuation">)</span>
+	AMachineKey<span class="token operator">*</span> Key<span class="token punctuation">;</span>
+	<span class="token function">UPROPERTY</span><span class="token punctuation">(</span>EditInstanceOnly<span class="token punctuation">)</span>
+	AMachinePort<span class="token operator">*</span> Port<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token function">UCLASS</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">ENIGMATURING_API</span> AEnigmaMachine <span class="token operator">:</span> <span class="token keyword">public</span> AActor
+<span class="token punctuation">&#123;</span>
+	<span class="token function">GENERATED_BODY</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	
+<span class="token keyword">public</span><span class="token operator">:</span>
+
+	<span class="token keyword">void</span> <span class="token function">BeginPlay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">override</span><span class="token punctuation">;</span>
+
+	<span class="token function">UPROPERTY</span><span class="token punctuation">(</span>EditInstanceOnly<span class="token punctuation">)</span>
+	TArray<span class="token operator">&lt;</span>ARotorWheel<span class="token operator">*</span><span class="token operator">></span> RotorWheels<span class="token punctuation">;</span>
+
+	<span class="token function">UPROPERTY</span><span class="token punctuation">(</span>EditInstanceOnly<span class="token punctuation">)</span>
+	ARotorWheel<span class="token operator">*</span> ReflectorWheel<span class="token punctuation">;</span>
+
+	<span class="token function">UPROPERTY</span><span class="token punctuation">(</span>EditInstanceOnly<span class="token punctuation">)</span>
+	TMap<span class="token operator">&lt;</span>FString<span class="token punctuation">,</span> FLetterComponents<span class="token operator">></span> LetterComponents<span class="token punctuation">;</span>
+
+	FString LastLampKey <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+
+	FString OutputText <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+
+	<span class="token function">UPROPERTY</span><span class="token punctuation">(</span>EditInstanceOnly<span class="token punctuation">)</span>
+	TSubclassOf<span class="token operator">&lt;</span>UMachineTextOutput<span class="token operator">></span> OutputWidgetClass<span class="token punctuation">;</span>
+
+	UMachineTextOutput<span class="token operator">*</span> OutputWidget<span class="token punctuation">;</span>
+
+	<span class="token keyword">void</span> <span class="token function">PressKey</span><span class="token punctuation">(</span>int32 AlphabetIndex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	int32 <span class="token function">EncodeLetter</span><span class="token punctuation">(</span>int32 AlphabetIndex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre></div>
+
+
+		<script type="module" data-hydrate="p4pifp">
+		import { start } from "/_app/start-54d1a778.js";
+		start({
+			target: document.querySelector('[data-hydrate="p4pifp"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-16dddcdf.js"),
+						import("/_app/pages/projects/enigma-machine.md-6209be0f.js")
+				],
+				params: {},
+				routeId: "projects/enigma-machine"
+			}
+		});
+	</script></div>
+	</body>
+</html>
