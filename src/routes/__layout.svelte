@@ -1,6 +1,6 @@
 <script>
   import "../app.css";
-  import Header from '$lib/component/Header.svelte'
+  import Header from '$lib/component/Header.svelte' 
   import 'prism-themes/themes/prism-darcula.css';
 </script>
 

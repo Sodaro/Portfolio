@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url(/prism-dracula.css);
+/* @import url(/prism-dracula.css); */
 @layer components {
 .mysection {
     @apply items-center place-content-center lg:flex w-full h-screen;

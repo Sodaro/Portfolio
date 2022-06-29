@@ -1,20 +1,35 @@
 import { mdsvex } from "mdsvex";
 import mdsvexConfig from "./mdsvex.config.js";
 import preprocess from "svelte-preprocess";
-import adapter from "@sveltejs/adapter-static";
+import vercel from '@sveltejs/adapter-vercel';
+//import adapter from "@sveltejs/adapter-static";
+
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   extensions: [".svelte", ...mdsvexConfig.extensions],
 
   kit: {
-    adapter: adapter({
-      pages: "docs",
-      assets: "docs",
-    }),
-    prerender: {
-      default: true,
+     // default options are shown
+     adapter: vercel({
+      // if true, will deploy the app using edge functions
+      // (https://vercel.com/docs/concepts/functions/edge-functions)
+      // rather than serverless functions
+      edge: false,
+
+      // an array of dependencies that esbuild should treat
+      // as external when bundling functions
+      external: [],
+
+      // if true, will split your app into multiple functions
+      // instead of creating a single one for the entire app
+      split: false
     },
+    ),
+    // prerender: {
+    //   entries:["*"],
+    //   default: true,
+    // }
   },
 
   preprocess: [

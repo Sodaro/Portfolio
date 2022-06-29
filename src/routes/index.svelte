@@ -1,3 +1,5 @@
+
+
 <script context="module">
 export const load = async ({ fetch }) => {
   const posts = await fetch('/api/posts.json')
@@ -30,7 +32,7 @@ export const load = async ({ fetch }) => {
 <div class="mysection">
     <div class="avatar">
       <div class="w-64 mask mask-squircle">
-        <img src="profilepic.jpg" alt="dave">
+        <img src="/profilepic.jpg" alt="dave">
       </div>
     </div>
     <div class="mb-10 p-10">
@@ -55,7 +57,7 @@ export const load = async ({ fetch }) => {
         </svg>
         </a>
         <a href="https://sodaro.itch.io/">
-        <img class="h-10" src="itchio-textless-white.svg"/>          
+        <img class="h-10" src="/itchio-textless-white.svg"/>          
         </a>
         <a href="mailto:email@address.com" class="btn btn-primary text-white font-bold py-2 px-4 rounded">Contact!</a>
         <!-- <button class="btn btn-primary">Cool!</button>
@@ -70,7 +72,7 @@ export const load = async ({ fetch }) => {
       <div class="card w-96 h-full bg-neutral shadow-xl">
         <figure class="">
           <video on:mouseover={handleMouseOver} on:mouseout={handleMouseOut} class="h-72" muted>
-            <source src="UnrealEnigmaMachine.mp4" type="video/mp4">
+            <source src="/UnrealEnigmaMachine.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
           <!-- <img class="object-cover h-72" src="enigmamachine.gif" alt="Enigma Machine Project"/> -->
@@ -83,7 +85,7 @@ export const load = async ({ fetch }) => {
     </a>
     <a href="/projects/pumpkin-boy">
     <div class="card w-96 h-full bg-neutral shadow-xl">
-      <figure class=""><img class="object-cover h-72" src="pumpkinboy.png" alt="Pumpkin Boy Project" /></figure>
+      <figure class=""><img class="object-cover h-72" src="/pumpkinboy.png" alt="Pumpkin Boy Project" /></figure>
       <div class="card-body">
         <h3 class="card-title">Pumpkin Boy</h3>
         <p>Thirdperson Puzzle game made in Unity.</p>
@@ -108,3 +110,5 @@ export const load = async ({ fetch }) => {
     <li>Gameprogrammer: Futuregames 2021-2023</li>
   </ul>
 </div>
+
+<a href="/projects">Projects</a>

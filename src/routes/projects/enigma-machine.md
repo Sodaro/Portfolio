@@ -4,7 +4,6 @@ date: "2021-12-14"
 ---
 
 **Engima Machine**
-
 <img src="/enigmamachine.png" width="200" height="100">
 
 ![Alt Text](/enigmamachine.png "Title")
