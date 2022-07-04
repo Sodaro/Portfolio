@@ -1,12 +1,9 @@
 <script>
   import "../app.css";
-  import Header from '$lib/component/Header.svelte' 
-  import 'prism-themes/themes/prism-darcula.css';
+  import Header from '../components/Header.svelte' 
 </script>
 
-<div class="min-h-screen">
-  <div class="container mx-auto pt-10">
-    <Header />
-  </div>
+<div class="min-h-screen mx-auto w-2/4 container">
+  <Header/>
   <slot/>
 </div>

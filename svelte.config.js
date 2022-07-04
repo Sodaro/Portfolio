@@ -26,6 +26,11 @@ const config = {
       split: false
     },
     ),
+    alias:{
+      $components: "src/components",
+      $snippets: "src/snippets",
+      $content: "src/content",
+    }
     // prerender: {
     //   entries:["*"],
     //   default: true,

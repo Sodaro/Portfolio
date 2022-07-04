@@ -5,6 +5,22 @@
 /* @import url(/prism-dracula.css); */
 @layer components {
 .mysection {
-    @apply items-center place-content-center lg:flex w-full h-screen;
+    @apply place-content-start lg:flex w-full h-screen mt-64;
+  }
+.mycolsection {
+    @apply place-content-start lg:flex flex-col w-full h-screen mt-64;
+  }
+}
+
+
+@layer base {
+  h1 {
+    @apply text-2xl font-bold;
+  }
+  h2 {
+    @apply text-xl font-bold mt-4;
+  }
+  h3 {
+    @apply text-lg font-bold mt-2;
   }
 }

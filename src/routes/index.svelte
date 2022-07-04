@@ -1,46 +1,36 @@
-
-
 <script context="module">
-export const load = async ({ fetch }) => {
-  const posts = await fetch('/api/posts.json')
-  const allPosts = await posts.json()
+// export const load = async ({ fetch }) => {
+//   const posts = await fetch('/api/posts.json')
+//   const allPosts = await posts.json()
 
-  return {
-    props: {
-      posts: allPosts
-    }
-  }
-}
+//   return {
+//     props: {
+//       posts: allPosts
+//     }
+//   }
+// }
 </script>
 
 <script>
-  export let posts
-
-  function handleMouseOver(event)
-  {
-    event.target.play();
-  }
-  function handleMouseOut(event)
-  {
-    event.target.pause();
-    // event.target.currentTime=0;
-  }
-
+  export let posts;
+  import Card from "$components/Card.svelte";
+  import VidCard from "$components/VidCard.svelte";
+  import About from "$content/about.md";
+  import Skills from "$content/skills.md";
 </script>
 
-
-<div class="mysection">
+<div id="welcome" class="mysection">
     <div class="avatar">
-      <div class="w-64 mask mask-squircle">
+      <div class="w-64 h-64 mx-4 mask mask-squircle">
         <img src="/profilepic.jpg" alt="dave">
       </div>
     </div>
-    <div class="mb-10 p-10">
-      <h2 class="py-4 text-xl font-bold">Hi!</h2>
-      <p>My name is David Bång. I'm a programmer who loves making gameplay mechanics and systems. I'm currently studying gameprogramming at Futuregames.</p>
-      <p>Languages: Fluent in C#, comfortable with C++ and Lua. Experienced with Unity, currently working in Unreal Engine.</p>
+    <div class="">
+      <h2>Hi, I'm David Bång!</h2>
+      <p>I'm a programmer who loves making gameplay mechanics and systems.</p>
+      <!-- <p>Languages: Fluent in C#, comfortable with C++ and Lua. Experienced with Unity, currently working in Unreal Engine.</p> -->
       <!-- <h2 class="py-4 mt-4 mb-2 text-lg font-bold">Contact & Socials</h2> -->
-      <div class="mysocialicons flex py-4 gap-x-4">
+      <div class="mysocialicons flex gap-x-2 py-4">
         <a href="https://twitter.com/Sodaro_">
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-10 bi bi-twitter" viewBox="0 0 16 16">
           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
@@ -57,54 +47,34 @@ export const load = async ({ fetch }) => {
         </svg>
         </a>
         <a href="https://sodaro.itch.io/">
-        <img class="h-10" src="/itchio-textless-white.svg"/>          
+          <img class="h-10" src="/itchio-textless-white.svg"/>          
         </a>
         <a href="mailto:email@address.com" class="btn btn-primary text-white font-bold py-2 px-4 rounded">Contact!</a>
-        <!-- <button class="btn btn-primary">Cool!</button>
-        <button class="btn btn-secondary">Coo2!</button> -->
-      </div> 
-    </div>
-</div>
-<div class="mysection flex-col">
-  <h2 class="py-4 text-lg font-bold">Featured Projects</h2>
-  <div class="games flex flex-row gap-x-4">
-    <a href="/projects/enigma-machine">
-      <div class="card w-96 h-full bg-neutral shadow-xl">
-        <figure class="">
-          <video on:mouseover={handleMouseOver} on:mouseout={handleMouseOut} class="h-72" muted>
-            <source src="/UnrealEnigmaMachine.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <!-- <img class="object-cover h-72" src="enigmamachine.gif" alt="Enigma Machine Project"/> -->
-        </figure>
-        <div class="card-body">
-          <h3 class="card-title">Enigma Machine</h3>
-          <p>Interactible Enigma machine made in Unreal.</p>
+        <div class="flex place-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+          </svg>
+          <p>Stockholm, Sweden</p>
         </div>
       </div>
-    </a>
-    <a href="/projects/pumpkin-boy">
-    <div class="card w-96 h-full bg-neutral shadow-xl">
-      <figure class=""><img class="object-cover h-72" src="/pumpkinboy.png" alt="Pumpkin Boy Project" /></figure>
-      <div class="card-body">
-        <h3 class="card-title">Pumpkin Boy</h3>
-        <p>Thirdperson Puzzle game made in Unity.</p>
-      </div>
     </div>
-    </a>
-    <a href="/projects/dizt">
-    <div class="card w-96 h-full bg-neutral shadow-xl">
-      <figure class=""><img class="object-cover h-72" src="dizt.png" alt="DIZT" /></figure>
-      <div class="card-body">
-        <h3 class="card-title">DIZT</h3>
-        <p>Ludum Dare 50 Entry. Action game with horror aesthetic made in Unity.</p>
-      </div>
-    </div>
-   </a>         
+</div>
+<div id="about" class="mysection">
+  <div class="">
+    <About/>
+    <Skills/>
+  </div>
+</div>
+<div class="mycolsection">
+  <h2>Featured Projects</h2>
+  <div class="games flex flex-row gap-x-4">
+    <VidCard dir="projects/enigma-machine" src="/UnrealEnigmaMachine.mp4" alt="video of EnigmaMachine" title="Enigma Machine" descr="Enigma Machine made in Unreal C++"/>
+    <Card dir="/projects/pumpkin-boy" src="/pumpkinboy.png" alt="Pumpkin Boy Project" title="Pumpkin Boy" descr="Thirdperson Puzzle game made in Unity."/>
+    <Card dir="/projects/dizt" src="dizt.png" alt="DIZT" title="DIZT" descr="Ludum Dare 50 Entry. Action game with horror aesthetic made in Unity."/>
  </div>
 </div>
-<div class="mysection flex-col">
-  <h2 class="text-lg font-bold">Education</h2>
+<div class="mycolsection">
+  <h2>Education</h2>
   <ul>
     <li>Game Design: Uppsala University 2016-2019</li>
     <li>Gameprogrammer: Futuregames 2021-2023</li>
