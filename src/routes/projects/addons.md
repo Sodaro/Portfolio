@@ -1,26 +1,28 @@
 ---
 title: Addons
-date: "2021-12-14"
+date: "2022-07-05"
 ---
 
 
+# WoW Addons
 
-# Uses
+<script>
+	import Collapse from "$components/Collapse.svelte";
+    import SCF_Filtering from "$snippets/chatfilter_filtering.md"
+    import SCF_Commands from "$snippets/chatfilter_commands.md"
+</script>
 
-**WoW Addons**🤺👺
 
+## SodaChatFilter
+<Collapse title="Filtering Commands lua">
 
+    <SCF_Commands />
+</Collapse>
+<Collapse title="Filtering behavior lua">
 
-- SodaChatFilter
-- SodaDungeons
-- SodaQuestAnnouncer
-- SodaBarHider
+    <SCF_Filtering />
+</Collapse>
 
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+## SodaDungeons
+## SodaQuestAnnouncer
+## SodaBarHider

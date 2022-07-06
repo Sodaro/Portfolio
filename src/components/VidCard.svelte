@@ -1,5 +1,5 @@
 <script>
-	export let dir = "/projects/pumpkin-boy";
+	  export let dir = "/projects/pumpkin-boy";
     export let src = "/UnrealEnigmaMachine.mp4";
     export let type = "video/mp4";
     export let alt = "Pumpkin Boy Project";
@@ -21,9 +21,9 @@
 
 
 <a href={dir}>
-    <div class="card w-96 h-full bg-neutral shadow-xl">
+    <div class="card w-96 h-full shadow-xl">
       <figure class="">
-        <video on:mouseover={handleMouseOver} on:mouseout={handleMouseOut} class="h-72" alt={alt} muted>
+        <video on:mouseover={handleMouseOver} on:mouseout={handleMouseOut} class="object-cover h-72" alt={alt} muted>
           <source src={src} type={type}>
           Your browser does not support the video tag.
         </video>

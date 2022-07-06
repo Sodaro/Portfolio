@@ -4,23 +4,30 @@
 @tailwind utilities;
 /* @import url(/prism-dracula.css); */
 @layer components {
-.mysection {
-    @apply place-content-start lg:flex w-full h-screen mt-64;
+  .mysection {
+    @apply place-content-start flex flex-row lg:flex-col w-full h-screen mt-64;
   }
-.mycolsection {
-    @apply place-content-start lg:flex flex-col w-full h-screen mt-64;
+  .mycolsection {
+    @apply place-content-start flex flex-col w-full h-screen mt-64;
+  }
+  .navButton{
+    @apply bg-base-100
+  }
+  .navButton.active{
+    @apply bg-base-300
   }
 }
 
 
 @layer base {
   h1 {
-    @apply text-2xl font-bold;
+    @apply text-3xl lg:text-5xl font-bold;
   }
   h2 {
-    @apply text-xl font-bold mt-4;
+    @apply text-2xl lg:text-4xl font-bold mt-4;
   }
   h3 {
-    @apply text-lg font-bold mt-2;
+    @apply text-xl lg:text-3xl font-bold mt-2;
   }
 }
+

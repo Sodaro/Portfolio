@@ -22,7 +22,14 @@ const config = {
     },
   },
   daisyui: {
-    themes:["dracula"]
+    styled: true,
+    themes: ["bumblebee", "dracula"],
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+    prefix: "",
+    darkTheme: "dracula",
   },
   plugins: [require("daisyui"), require("@tailwindcss/typography")],
 };

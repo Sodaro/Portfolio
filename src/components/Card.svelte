@@ -7,7 +7,7 @@
 </script>
 
 <a href={dir}>
-    <div class="card w-96 h-full bg-neutral shadow-xl">
+    <div class="card w-96 h-full shadow-xl">
       <figure><img class="object-cover h-72" src={src} alt={alt} /></figure>
       <div class="card-body">
         <h3 class="card-title">{title}</h3>
