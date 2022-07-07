@@ -10,11 +10,6 @@ const config = {
   extensions: [".svelte", ...mdsvexConfig.extensions],
 
   kit: {
-    csp: {
-      directives: {
-        'script-src': ['self', 'https://www.googletagmanager.com/gtag/js?id=G-8SFXJDMWR4']
-      }
-    },
      // default options are shown
      adapter: vercel({
       // if true, will deploy the app using edge functions
