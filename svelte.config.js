@@ -12,7 +12,7 @@ const config = {
   kit: {
     csp: {
       directives: {
-        'script-src': ['self', 'vitals.vercel-insights.com']
+        'script-src': ['self', 'https://www.googletagmanager.com/gtag/js?id=G-8SFXJDMWR4']
       }
     },
      // default options are shown
