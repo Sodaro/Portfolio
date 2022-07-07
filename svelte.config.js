@@ -35,7 +35,7 @@ const config = {
       $components: "src/components",
       $snippets: "src/snippets",
       $content: "src/content",
-      $media: "static/projectmedia"
+      $lib: "src/lib"
     }
     // prerender: {
     //   entries:["*"],
