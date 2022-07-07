@@ -3,6 +3,8 @@ title: Placeholder
 date: "2022-07-01"
 ---
 
+[**Back to frontpage**](..)
+<br>
 
 # Uses
 

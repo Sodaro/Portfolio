@@ -20,6 +20,9 @@
 
 
 @layer base {
+  a {
+    text-decoration: underline;
+  }
   h1 {
     @apply text-3xl lg:text-5xl font-bold;
   }

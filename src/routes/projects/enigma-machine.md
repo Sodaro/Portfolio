@@ -5,19 +5,24 @@ date: "2022-07-03"
 
 <script>
 	import Collapse from "$components/Collapse.svelte";
-    import Asdf from "$snippets/asdf.md"
+    import CoolCode from "$snippets/coolcode.md"
 </script>
 
-**Engima Machine**
-<img src="/enigmamachine.png" width="200" height="100">
+[**Back to frontpage**](..)
+<br>
 
-![Alt Text](/enigmamachine.png "Title")
+# Enigma Machine Project
 
-<Collapse title="cool.cpp">
-<Asdf />
+<img src="/projectmedia/enigmamachine.png" width="200" height="100">
+<br>
+
+![Alt Text](/projectmedia/enigmamachine.png "Title")
+
+<Collapse title="longcode.cpp">
+<CoolCode />
 </Collapse>
 
-<Collapse title="cool.cpp">
+<Collapse title="shortcode.cpp">
 
 ```cpp
 UENUM(BlueprintType)

@@ -2,7 +2,6 @@
 SLASH_SCF1 = "/SCF"
 local function MyCommands(msg, editbox)
     local case, text = strsplit(" ", msg, 2)
-    --msg = msg:gsub()
     if case == "add" then
         for word in text:gmatch("%S+") do
             if word:find("_") then
@@ -33,7 +32,7 @@ local function MyCommands(msg, editbox)
     elseif case == "print" then
         PrintFilters()
     else
-        success = C_ChatInfo.SendAddonMessage("SCF","Whisper test", "WHISPER", UnitName("player"))
+        print("SCF: Unknown parameter. Valid parameters: add x, remove x, clear")
     end
 end
 ```

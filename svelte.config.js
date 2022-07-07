@@ -10,6 +10,11 @@ const config = {
   extensions: [".svelte", ...mdsvexConfig.extensions],
 
   kit: {
+    csp: {
+      directives: {
+        'script-src': ['self', 'vitals.vercel-insights.com']
+      }
+    },
      // default options are shown
      adapter: vercel({
       // if true, will deploy the app using edge functions
@@ -30,6 +35,7 @@ const config = {
       $components: "src/components",
       $snippets: "src/snippets",
       $content: "src/content",
+      $media: "static/projectmedia"
     }
     // prerender: {
     //   entries:["*"],

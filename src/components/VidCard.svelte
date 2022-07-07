@@ -20,7 +20,7 @@
 </script>
 
 
-<a href={dir}>
+<a href={dir} class="z-1 no-underline">
     <div class="card w-96 h-full shadow-xl">
       <figure class="">
         <video on:mouseover={handleMouseOver} on:mouseout={handleMouseOut} class="object-cover h-72" alt={alt} muted>
