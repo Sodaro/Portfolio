@@ -67,7 +67,7 @@
         >
       </a>
       <a
-        href="mailto:email@address.com"
+        href="mailto:david.bang@outlook.com"
         class="btn btn-primary text-white font-bold py-2 px-4 rounded col-span-2"
         >Contact!</a
       >

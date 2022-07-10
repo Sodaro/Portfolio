@@ -12,6 +12,8 @@
   }
 </script>
 <svelte:head>
+
+  <title>DavidB | {$page.routeId == "" ? "Home" : $page.routeId.split("/")[1]}</title>
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-8SFXJDMWR4">

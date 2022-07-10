@@ -1,15 +1,4 @@
-<script context="module">
-  // export const load = async ({ fetch }) => {
-  //   const posts = await fetch('/api/posts.json')
-  //   const allPosts = await posts.json()
 
-  //   return {
-  //     props: {
-  //       posts: allPosts
-  //     }
-  //   }
-  // }
-</script>
 
 <script>
   let activeSectionID = "welcome";
@@ -130,6 +119,14 @@
 <section id="featuredprojects" class="mycolsection">
   <h2>Featured Projects</h2>
   <div class="games flex flex-col lg:flex-row   gap-x-4">
+    <Card
+    dir="/projects/addons"
+    src="/projectmedia/hideshowbars.jpg"
+    alt="image of a wow addon"
+    title="WoW Addons"
+    descr="A selection of World of Warcraft AddOns I have made over the years."
+    pos="object-right"
+    />
     <VidCard
       dir="projects/enigma-machine"
       src="/projectmedia/UnrealEnigmaMachine.mp4"
@@ -143,14 +140,6 @@
       alt="Pumpkin Boy Project"
       title="Pumpkin Boy"
       descr="Thirdperson Puzzle game made in Unity."
-    />
-    <Card
-      dir="/projects/addons"
-      src="/projectmedia/hideshowbars.jpg"
-      alt="image of a wow addon"
-      title="WoW Addons"
-      descr="A selection of World of Warcraft AddOns/mods I have made over the years, written in lua."
-      pos="object-right"
     />
   </div>
 </section>
