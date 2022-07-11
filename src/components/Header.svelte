@@ -61,7 +61,7 @@
       <li class="item about">
         <a href="/#about" class:active={false}>About</a>
       </li>
-      <li class="item projects">
+      <li class="item featuredprojects">
         <a
           href="/#featuredprojects"
           class:active={false}

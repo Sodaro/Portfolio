@@ -5,12 +5,11 @@
 /* @import url(/prism-dracula.css); */
 @layer components {
   .mysection {
-    @apply place-content-start flex flex-row lg:flex-col w-full mb-64 lg:mt-64;
+    @apply place-content-start flex flex-row lg:flex-col w-full;
     height:50vh;
   }
   .mycolsection {
-    @apply place-content-start flex flex-col w-full mt-64;
-    height:50vh;
+    @apply place-content-start flex flex-col w-full h-fit;
   }
   .navButton{
     @apply bg-base-100
@@ -20,7 +19,7 @@
   }
   @media only screen and (max-width: 600px) {
     .mycolsection {
-      @apply place-content-start flex flex-col h-fit w-full mt-64;
+      @apply place-content-start flex flex-col h-fit w-full;
     }
   }
 }
