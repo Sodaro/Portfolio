@@ -7,10 +7,10 @@
     export let pos = "object-center"
 </script>
 
-<a href={dir} class="z-1 no-underline">
-    <div class="card w-96 h-full shadow-xl">
+<a href={dir} class="z-1 w-full lg:w-fit no-underline">
+    <div class="card w-full lg:w-96 h-full shadow-xl">
       <figure><img class="object-cover h-72 {pos}" src={src} alt={alt} /></figure>
-      <div class="card-body">
+      <div class="card-body w-full">
         <h3 class="card-title">{title}</h3>
         <p>{descr}</p>
       </div>
