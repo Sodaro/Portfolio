@@ -19,7 +19,6 @@
         const sectionHeight = section.clientHeight;
         if (scrollY >= sectionTop - sectionHeight / 3) {
           activeSectionID = section.getAttribute("id");
-          // console.log(current);
         }
       });
       navLi.forEach((li) => {
@@ -50,11 +49,11 @@
     <div class="games flex flex-col lg:flex-row lg:flex-wrap w-full h-fit lg:gap-x-4">
       <Card
       dir="/projects/addons"
-      src="/projectmedia/hideshowbars.jpg"
+      src="/projectmedia/hideshowbarscropped.jpg"
       alt="image of a wow addon"
       title="WoW Addons"
       descr="A selection of World of Warcraft AddOns I have made over the years."
-      pos="object-right"
+      pos="object-center"
       />
       <VidCard
         dir="projects/enigma-machine"

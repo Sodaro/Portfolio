@@ -6,10 +6,6 @@ pos: "center"
 lang: "c#"
 ---
 
-[**Back to frontpage**](..)
-<br>
+# Pumpkin boy
 
-# Uses
-
-**Pumpkin boy?**
 🎃

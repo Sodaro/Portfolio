@@ -10,7 +10,7 @@
     </div>
     <div class="avatar col-start-2 row-start-1">
       <div class="w-64 h-64 object-contain mask mask-squircle">
-        <img src="/profilepic.jpg" alt="dave" />
+        <img src="/profilepic2.jpg" alt="dave" />
       </div>
     </div>
     <div

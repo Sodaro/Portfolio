@@ -11,7 +11,4 @@ lang: "c++"
     import CoolCode from "$snippets/coolcode.md"
 </script>
 
-[**Back to frontpage**](..)
-<br>
-
 # Enigma Machine Project
