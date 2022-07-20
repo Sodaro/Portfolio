@@ -23,7 +23,7 @@ const config = {
   },
   daisyui: {
     styled: true,
-    themes: ["bumblebee", "dracula"],
+    themes: ["autumn", "dracula"],
     base: true,
     utils: true,
     logs: true,
