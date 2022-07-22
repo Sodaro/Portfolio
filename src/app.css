@@ -21,6 +21,9 @@
     .mycolsection {
       @apply place-content-start flex flex-col h-fit w-full;
     }
+    .mysection {
+      @apply place-content-start flex flex-row lg:flex-col w-full h-fit;
+    }
   }
 }
 
@@ -30,16 +33,19 @@
     text-decoration: underline;
   }
   h1 {
-    @apply text-3xl lg:text-5xl font-bold;
+    @apply text-3xl lg:text-5xl pb-4 font-bold;
   }
   h2 {
-    @apply text-2xl lg:text-4xl font-bold mt-4;
+    @apply text-2xl lg:text-4xl pb-2 font-bold;
   }
   h3 {
-    @apply text-xl lg:text-3xl font-bold mt-2;
+    @apply text-xl lg:text-3xl pb-4 font-bold;
   }
   h4 {
-    @apply text-xl lg:text-2xl font-bold mt-2;
+    @apply text-xl lg:text-2xl pb-4 font-bold;
+  }
+  section {
+    @apply mb-12
   }
 }
 

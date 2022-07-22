@@ -6,6 +6,10 @@ pos: "center"
 lang: "c#"
 ---
 
+<svelte:head>
+<title>DavidB | Pumpkin Boy</title>
+</svelte:head>
+
 # Pumpkin boy
 
 🎃

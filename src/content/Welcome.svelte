@@ -5,7 +5,12 @@
     <div id="welcometext row-start-2 lg:row-start-1 col-start-1 col-end-2">
       <h1 class="col-span-2 row-start-1">Hi, I'm David Bång!</h1>
       <p class="col-span-2 row-start-2 row-end-3">
-        I'm a programmer who loves making gameplay mechanics and systems.
+        I'm a programmer with a passion for all things gamedev.
+        
+        <br>
+        <br>
+        I love transforming an abstract gameplay idea into a concrete system that the user can intreact with.
+        In my sparetime I love looking at existing games and their systems, and recreating parts myself!
       </p>
     </div>
     <div class="avatar col-start-2 row-start-1">

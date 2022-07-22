@@ -1,5 +1,13 @@
 <script>
   export let activeSectionID;
+
+  function scrollIntoView({ target }) {
+		const el = document.querySelector(target.getAttribute('href'));
+		if (!el) return;
+    el.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
 </script>
 
 <header class="top-0 left-0 sticky z-50 bg-base-100">
@@ -47,20 +55,21 @@
     </div>
     <ul class="menu w-full hidden lg:flex lg:flex-row">
       <li class="item welcome">
-        <a href="/" class:active={true}>Welcome</a>
+        <a href="#welcome" on:click|preventDefault={scrollIntoView} class:active={true}>Welcome</a>
       </li>
       <li class="item about">
-        <a href="/#about" class:active={false}>About</a>
+        <a href="/#about" on:click|preventDefault={scrollIntoView} class:active={false}>About</a>
       </li>
       <li class="item featuredprojects">
         <a
-          href="/#featuredprojects"
+          href="#featuredprojects"
+          on:click|preventDefault={scrollIntoView}
           class:active={false}
           >Featured Projects</a
         >
       </li>
       <li class="item education">
-        <a href="/#education" class:active={false}
+        <a href="#education" on:click|preventDefault={scrollIntoView} class:active={false}
           >Education</a
         >
       </li>

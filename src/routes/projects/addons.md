@@ -1,7 +1,7 @@
 ---
 title: Addons
 date: "2022-07-05"
-thumb: "hideshowbarscropped.jpg"
+thumb: "hideshowbars.jpg"
 pos: "right"
 lang: "lua"
 ---
@@ -13,9 +13,11 @@ lang: "lua"
     import SBH_BarHider from "$snippets/barhider.md"
 </script>
 
+[**Back to frontpage**](..)
+<br>
 
 <svelte:head>
-<title>AddOns</title>
+<title>DavidB | AddOns</title>
 </svelte:head>
 
 # WoW Addons
@@ -24,8 +26,10 @@ lang: "lua"
 An AddOn (capitalization varies but meaning is the same) is a modification (or mod) to the game World of Warcraft. Addons are written in lua and uses the game API to change the UI, execute logic when events happen etc.  
 
 ## Why make addons when so many already exist?
-Aside from finding addon development really fun, the main reason I make addons is because when I try to find addons that solve a problem I have; they often tend to be very cumbersome, locked in suites (big addons with multiple modules/dependencies), or have functionality that override base game interfaces etc. My approach when making addons is to make tools with specific purposes, want a tool that tells you the sellvalue of all the trash in your inventory? **SodaBagValue** does that and nothing more. Want a way to easily hide messages containing certain words/sentences? **SodaChatFilter** is my answer to that. 
+Aside from finding addon development really fun, the main reason I make addons is because when I try to find addons that solve a problem I have; they often tend to be very cumbersome, locked in suites (big addons with multiple modules/dependencies), or have functionality that override base game interfaces etc. My approach when making addons is to make tools with specific purposes, want a tool that tells you the sellvalue of all the trash in your inventory? **SodaBagValue** does that and nothing more. Want a way to easily hide messages containing certain words/sentences? **SodaChatFilter** is my answer to that.
+
 <br>
+
 By having small and focused addons that only rely on the base API, it is a lot easier for any user to use whatever addons they want as there will be a lot fewer conflicts and it is easy to disable/remove them without losing any other functionality.  
 <br>
 
@@ -67,7 +71,7 @@ The message is split on whitespace to get all the parameters provided after "/sc
     <SBH_BarHider />
 </Collapse>
 
-![FStack view of the hide/show bar frames](/projectmedia/hideshowbarscropped.jpg "Displaying the two frames used for hiding/showing the right actionbar.")
+![FStack view of the hide/show bar frames](/projectmedia/hideshowbars.jpg "Displaying the two frames used for hiding/showing the right actionbar.")
 
 <br>
 

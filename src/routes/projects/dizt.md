@@ -9,6 +9,11 @@ lang: "c#"
 [**Back to frontpage**](..)
 <br>
 
+
+<svelte:head>
+<title>DavidB | DIZT</title>
+</svelte:head>
+
 # Uses
 
 **DIZT**
