@@ -10,25 +10,27 @@
   onMount(() => {
     themeChange(false)
     
+    var theme = window.localStorage.theme;
+    console.log(theme);
     
-    var theme = window.localStorage.getItem('data-theme');
-    if(theme) document.documentElement.setAttribute('data-theme', theme);
-
+    if (theme === 'dark' || (!('theme' in window.localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
 
     var checkBox = document.getElementById('darkcb');
-    checkBox.checked = theme == 'dracula' ? true : false;
-
-    console.log(theme);
+    checkBox.checked = theme == 'dark' ? true : false;
     // 👆 false parameter is required for svelte
     
     checkBox.addEventListener('change', function () {
     if(this.checked){
-      document.documentElement.setAttribute('data-theme', 'dracula');
-      window.localStorage.setItem('data-theme', 'dracula');
-      
+      //document.documentElement.setAttribute('data-theme', 'dracula');
+      window.localStorage.theme = "dark";
+      document.documentElement.classList.add('dark')
     } else {
-      document.documentElement.setAttribute('data-theme', 'bumblebee');
-      window.localStorage.setItem('data-theme', 'bumblebee');
+      document.documentElement.classList.remove('dark')
+      window.localStorage.theme = "light";
     }
   });
 

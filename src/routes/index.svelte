@@ -12,7 +12,6 @@
   import VidCard from "$components/VidCard.svelte";
   import About from "$content/about.md";
   import Skills from "$content/skills.md";
-
   onMount(() => {
     const sections = document.querySelectorAll("section");
     const navLi = document.querySelectorAll("header nav ul li");

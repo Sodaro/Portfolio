@@ -13,9 +13,6 @@ lang: "lua"
     import SBH_BarHider from "$snippets/barhider.md"
 </script>
 
-[**Back to frontpage**](..)
-<br>
-
 <svelte:head>
 <title>DavidB | AddOns</title>
 </svelte:head>
@@ -71,7 +68,7 @@ The message is split on whitespace to get all the parameters provided after "/sc
     <SBH_BarHider />
 </Collapse>
 
-![FStack view of the hide/show bar frames](/projectmedia/hideshowbars.jpg "Displaying the two frames used for hiding/showing the right actionbar.")
+![FStack view of the hide/show bar frames](/projectmedia/hideshowbarscropped.jpg "Displaying the two frames used for hiding/showing the right actionbar.")
 
 <br>
 

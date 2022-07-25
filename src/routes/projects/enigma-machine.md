@@ -8,7 +8,9 @@ lang: "c++"
 
 <script>
     import Collapse from "$components/Collapse.svelte";
-    import CoolCode from "$snippets/coolcode.md"
+    import EnigmaStruct from "$snippets/enigmastruct.md";
+    import RotorEncryption from "$snippets/rotorencryption.md";
+    import EnigmaEncryption from "$snippets/enigmaencryption.md";
     import ButtonLink from "$components/ButtonLink.svelte";
 </script>
 
@@ -20,7 +22,7 @@ lang: "c++"
 <section>
 
 ## Background
-I got the inspiration to make an Enigma Machine after seeing the movie "The Imitation Game" and watching a few Computerphile youtube-videos that talked about how the machine worked and how it was cracked. My goal with the project was to make a machine that had rotorwheels you could manually rotate and swap out for different configs, have a working lampboard that shows the encrypted letter, and to have a plugboard where you can manually link letters together. I did not look at any existing algorithms, instead I limited myself to the following resources:
+I got the inspiration to make an Enigma Machine after seeing the movie "The Imitation Game" and watching a few Computerphile youtube-videos that talked about how the machine worked and how it was cracked. My goal with the project was to make a machine that had rotorwheels you could manually rotate and swap out for different configs and to have a working lampboard that shows the encrypted letter. I did not look at any existing algorithms, instead I limited myself to the following resources:
 <br>
 <ButtonLink href="https://www.101computing.net/enigma-machine-emulator/">
     Emulator
@@ -36,8 +38,16 @@ I got the inspiration to make an Enigma Machine after seeing the movie "The Imit
 
 <section>
 
-## Implementation
-The machine has a map of structs, which are used to group together the keys, lamps, and the port on the plugboard. The machine also has three RotorWheels and a reflector. The rotorwheels behave like ciphers and have unique configs, so RotorWheel I in position 0 might take an A as input and output it as K, whereas another wheel might output the same as X. When a key is pressed the right-most wheel rotates before the signal is sent through, and when a wheel reaches a so called "notch-position" it will rotate the next wheel, similarly to an odometer. When the letter reaches the end it goes through a "reflector" which has pairs of letters mapped together (where a regular wheel would map A to B but not have B mapped to A, the reflector maps A to B and B to A), and then the signal goes through the same wheels again and finally lights up a lamp with the encrypted letter. The rotation behaves like an offset, which makes it so pressing the same key multiple times won't output the same letter.
+## How it works
+A typical machine has an input board, plugboard, lampboard, three RotorWheels, and a reflector. The rotorwheels have unique configs but they behave like rotating substitution ciphers, so RotorWheel I in position 0 might take an A as input and output it as K, whereas another wheel might output the same as X. The wheels can be placed in any of the three positions, and the initial rotation offset and ringsetting (which shifts the wiring around) can also be changed.
+
+<video width="640" height="360" controls>
+  <source src="/projectmedia/enigmamachine_rotorwheel.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+The first wheel rotates every time a key is pressed, and when it reaches a so called "turnover notch position" it will rotate the next wheel, which in turn will rotate the last wheel when it reaches it's own turnover position, similarly to an odometer. The rotation behaves like an index offset, which makes it so pressing the same key multiple times won't output the same letter multiple times in a row. At the end there is a "reflector" which has pairs of letters mapped together (where a regular wheel would map A to B but not have B mapped to A, the reflector maps A to B and B to A).
+
 
 <Collapse title="Encryption example step by step">
 
@@ -67,6 +77,27 @@ The machine has a map of structs, which are used to group together the keys, lam
 - 3\. Wheel 1 receives A and outputs E
 - 4\. ...
 - 10\. **Lamp with letter Z lights up**
+
+</Collapse>
+
+## Implementation
+For easy access and quick access to the interactible input key objects, lamps and the plugboard ports I chose to use a hashmap with structs.
+I simulate the rotation of the wheels by incrementing an index offset, and the ring setting with a different offset which I use to change what letter gets returned by the encryption.
+When a key is pressed I call EncodeLetter with the alphabet position of the letter as parameter. 
+<Collapse title="EnigmaComponents struct">
+
+<EnigmaStruct />
+
+</Collapse>
+
+<Collapse title="Individual Rotor encryption">
+
+<RotorEncryption />
+</Collapse>
+
+<Collapse title="Machine encryption">
+
+<EnigmaEncryption />
 
 </Collapse>
 

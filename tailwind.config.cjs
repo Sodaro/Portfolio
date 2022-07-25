@@ -1,6 +1,6 @@
 const config = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
-
+  darkMode: 'class',
   theme: {
     extend: {
       typography: {
@@ -24,12 +24,12 @@ const config = {
   daisyui: {
     styled: true,
     themes: ["autumn", "dracula"],
+    darkTheme: "dracula",
     base: true,
     utils: true,
     logs: true,
     rtl: false,
     prefix: "",
-    darkTheme: "dracula",
   },
   plugins: [require("daisyui"), require("@tailwindcss/typography")],
 };

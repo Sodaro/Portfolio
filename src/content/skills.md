@@ -1,12 +1,15 @@
+<script>
+    import SkillIcon from "$components/SkillIcon.svelte";
+</script>
+
 ## Skills:
 
 ### Languages:
-- C#
-- C++
-- Lua
+
+<SkillIcon icon="lua" useCurrentColor="true" />
+<SkillIcon icon="cpp" />
+<SkillIcon icon="cs" />
 
 ### Engines:
-- Unity
-- Unreal Engine
-- Gamemaker Studio 2
-- Godot
+<SkillIcon icon="unity" useCurrentColor="true" />
+<SkillIcon icon="unreal" useCurrentColor="true"/>
