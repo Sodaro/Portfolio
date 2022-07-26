@@ -10,8 +10,7 @@
   import Welcome from "../content/Welcome.svelte";
   import Card from "$components/Card.svelte";
   import VidCard from "$components/VidCard.svelte";
-  import About from "$content/about.md";
-  import Skills from "$content/skills.md";
+  import SkillIcon from "$components/SkillIcon.svelte";
   onMount(() => {
     const sections = document.querySelectorAll("section");
     const navLi = document.querySelectorAll("header nav ul li");
@@ -97,7 +96,7 @@
       />
       <Card
         dir="/projects/pumpkin-boy"
-        src="/projectmedia/pumpkinboy.png"
+        src="/projectmedia/pumpkin/pumpkinboy.png"
         alt="Pumpkin Boy Project"
         title="Pumpkin Boy"
         descr="Thirdperson Puzzle game made in Unity."
@@ -111,8 +110,18 @@
 
 <section id="about" class="mysection mb-64">
   <div class="lg:pt-64">
-    <!-- <About /> -->
-    <Skills />
+    <h3> Languages: </h3>
+    <div class="flex lg:flex-row lg:flex-wrap">
+      <SkillIcon icon="lua" useCurrentColor="true" />
+      <SkillIcon icon="cpp" />
+      <SkillIcon icon="cs" />
+    </div>
+    <br>
+    <h3> Engines: </h3>
+    <div class="flex lg:flex-row lg:flex-wrap">
+      <SkillIcon icon="unity" useCurrentColor="true" />
+      <SkillIcon icon="unreal" useCurrentColor="true"/>
+    </div>
   </div>
 </section>
 

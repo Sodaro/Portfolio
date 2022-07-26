@@ -19,7 +19,7 @@ lang: "lua"
 
 # WoW Addons
 
-## What is an AddOn?
+<!-- ## What is an AddOn?
 An AddOn (capitalization varies but meaning is the same) is a modification (or mod) to the game World of Warcraft. Addons are written in lua and uses the game API to change the UI, execute logic when events happen etc.  
 
 ## Why make addons when so many already exist?
@@ -28,7 +28,7 @@ Aside from finding addon development really fun, the main reason I make addons i
 <br>
 
 By having small and focused addons that only rely on the base API, it is a lot easier for any user to use whatever addons they want as there will be a lot fewer conflicts and it is easy to disable/remove them without losing any other functionality.  
-<br>
+<br> -->
 
 ## My Addons
 
@@ -68,7 +68,7 @@ The message is split on whitespace to get all the parameters provided after "/sc
     <SBH_BarHider />
 </Collapse>
 
-![FStack view of the hide/show bar frames](/projectmedia/hideshowbarscropped.jpg "Displaying the two frames used for hiding/showing the right actionbar.")
+<img src="/projectmedia/hideshowbarscropped.jpg" width="550" height="720" />
 
 <br>
 
