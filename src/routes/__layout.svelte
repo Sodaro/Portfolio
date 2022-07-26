@@ -62,7 +62,7 @@
   </script>
 </svelte:head>
 
-<div class="min-h-screen mx-auto lg:w-2/4 container">
-  <Header/>
+<div class="min-h-screen mx-auto lg:w-2/4 lg:py-32 grid mycontainer">
+  <!-- <Header/> -->
   <slot/>
 </div>

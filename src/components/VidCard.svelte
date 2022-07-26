@@ -23,20 +23,20 @@
 
 
 <a href={dir} class="z-1 no-underline w-full lg:w-fit">
-    <div class="card w-full lg:w-96 h-full shadow-xl">
+    <div class="card w-full lg:w-96 h-full shadow-2xl bg-primary">
       <figure class="">
         <video on:mouseover={handleMouseOver} on:mouseout={handleMouseOut} class="object-cover h-72" alt={alt} muted>
           <source src={src} type={type}>
           Your browser does not support the video tag.
         </video>
-        <div class="flex flex-col w-12 h-fit top-0 right-0 absolute">
-          <SkillIcon icon={lang} />
+        <div class="flex flex-col w-12 h-fit top-0 right-0 absolute bg-secondary">
+          <SkillIcon icon={lang}/>
           <SkillIcon icon={engine} />
         </div>
       </figure>
-      <div class="card-body">
-        <h3 class="card-title">{title}</h3>
-        <p>{descr}</p>
-      </div>
+        <div class="pl-4 w-full">
+          <h4 class="pb-0 text-primary-content">{title}</h4>
+          <p class="pt-0 text-primary-content">{descr}</p>
+        </div>
     </div>
 </a>

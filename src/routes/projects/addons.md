@@ -11,11 +11,15 @@ lang: "lua"
     import SCF_Filtering from "$snippets/chatfilter_filtering.md"
     import SCF_Commands from "$snippets/chatfilter_commands.md"
     import SBH_BarHider from "$snippets/barhider.md"
+    import Button from "$components/Button.svelte";
 </script>
 
 <svelte:head>
 <title>DavidB | AddOns</title>
 </svelte:head>
+
+<Button href="/">
+</Button>
 
 # WoW Addons
 

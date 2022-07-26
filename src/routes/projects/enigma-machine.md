@@ -12,11 +12,15 @@ lang: "c++"
     import RotorEncryption from "$snippets/rotorencryption.md";
     import EnigmaEncryption from "$snippets/enigmaencryption.md";
     import ButtonLink from "$components/ButtonLink.svelte";
+    import Button from "$components/Button.svelte";
 </script>
 
 <svelte:head>
 <title>DavidB | Enigma Machine</title>
 </svelte:head>
+
+<Button href="/">
+</Button>
 
 # Enigma Machine Project
 <section>

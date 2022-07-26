@@ -6,9 +6,16 @@ pos: "center"
 lang: "c#"
 ---
 
+<script>
+    import Button from "$components/Button.svelte";
+</script>
+
 <svelte:head>
 <title>DavidB | Pumpkin Boy</title>
 </svelte:head>
+
+<Button href="/">
+</Button>
 
 # Pumpkin boy
 
