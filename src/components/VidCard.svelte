@@ -23,10 +23,11 @@
 
 
 <a href={dir} class="z-1 no-underline w-full lg:w-fit">
-    <div class="card w-full lg:w-96 h-full shadow-2xl bg-primary">
+    <div class="card w-full lg:w-72 h-full shadow-2xl bg-primary">
       <figure class="">
-        <video on:mouseover={handleMouseOver} on:mouseout={handleMouseOut} class="object-cover h-72" alt={alt} muted>
+        <video on:mouseover={handleMouseOver} on:mouseout={handleMouseOut} class="object-cover h-72" muted>
           <source src={src} type={type}>
+            <span class="sr-only">{alt}</span>
           Your browser does not support the video tag.
         </video>
         <div class="flex flex-col w-12 h-fit top-0 right-0 absolute bg-secondary">

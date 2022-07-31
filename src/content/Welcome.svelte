@@ -13,7 +13,7 @@
   </div>
   <div class="avatar col-start-3">
     <div class="w-64 h-64 object-contain mask lg:rounded-bl-3xl">
-      <img src="/profilepic.jpg" alt="dave" />
+      <img src="/profilepic2.jpg" alt="dave" />
     </div>
   </div>
   <div class="flex flex-col row-start-2 col-start-1">

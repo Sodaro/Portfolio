@@ -47,12 +47,12 @@
   // });
   function handleToggle({event}){
     if(this.checked){
-      window.localStorage.theme = "dark";
+      localStorage.theme = "dark";
       document.documentElement.classList.add('dark')
       document.documentElement.setAttribute('data-theme', 'dracula');
     } else {
       document.documentElement.classList.remove('dark')
-      window.localStorage.theme = "light";
+      localStorage.theme = "light";
       document.documentElement.removeAttribute('data-theme', 'dracula');
     }
   }
@@ -102,11 +102,11 @@
 </div>
 <div>
   <h2>Featured Projects</h2>
-  <div class="games flex flex-col lg:flex-row lg:flex-wrap w-full h-fit justify-between">
+  <div class="games flex flex-col gap-8 md:flex-row md:flex-wrap w-full h-fit justify-between">
     <Card
     dir="/projects/addons"
-    src="/projectmedia/hideshowbars.jpg"
-    alt="image of a wow addon"
+    src="/projectmedia/addons/hideshowbars3.jpg"
+    alt="a screenshot from World of Warcraft showing 4 green rectangles in debug view"
     title="WoW Addons"
     descr="A selection of World of Warcraft AddOns I have made over the years."
     pos="object-right"
@@ -115,7 +115,7 @@
     <VidCard
       dir="projects/enigma-machine"
       src="/projectmedia/UnrealEnigmaMachine.mp4"
-      alt="video of EnigmaMachine"
+      alt="Video showing 'Hello World' be encrypted on an EnigmaMachine"
       title="Enigma Machine"
       descr="An interactible Enigma Machine made in Unreal Engine C++"
       lang="cpp"
@@ -124,7 +124,7 @@
     <Card
       dir="/projects/pumpkin-boy"
       src="/projectmedia/pumpkin/pumpkinboy.png"
-      alt="Pumpkin Boy Project"
+      alt="The pumpkin boy character with the head and body on a switch and an open door"
       title="Pumpkin Boy"
       descr="Thirdperson Puzzle game made in Unity."
       lang="cs"

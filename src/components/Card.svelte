@@ -12,7 +12,7 @@
 </script>
 
 <a href={dir} class="z-1 w-full lg:w-fit no-underline">
-    <div class="card grow shrink w-full lg:w-96 h-full shadow-2xl bg-primary">
+    <div class="card grow shrink w-full lg:w-72 h-full shadow-2xl bg-primary">
       <figure>
         <img class="object-cover h-72 {pos}" src={src} alt={alt} />
         <div class="flex flex-col w-12 h-fit top-0 right-0 absolute bg-secondary">

@@ -22,15 +22,15 @@
     var checkBox = document.getElementById('darkcb');
     checkBox.checked = theme == 'dark' ? true : false;
     // 👆 false parameter is required for svelte
-    
+
     checkBox.addEventListener('change', function () {
     if(this.checked){
       //document.documentElement.setAttribute('data-theme', 'dracula');
-      window.localStorage.theme = "dark";
+      window.localStorage.theme = 'dark';
       document.documentElement.classList.add('dark')
     } else {
       document.documentElement.classList.remove('dark')
-      window.localStorage.theme = "light";
+      window.localStorage.theme = 'light';
     }
   });
 

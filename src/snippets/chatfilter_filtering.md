@@ -11,7 +11,7 @@ local function myChatFilter(self, event, msg, author, ...)
         if endPos ~= nil then --there is a match
             if endPos+1 <= #loweredmsg then --the endpos is not the last character 
                 local followingChar = string.sub(loweredmsg, endPos+1, endPos+1)
-                if string.match(followingChar, "[^a-zA-Z%d%s]") then --following char is whitespace or non-alphanumeric, filter the message
+                if string.match(followingChar, "[^a-zA-Z%d]") then --following char is whitespace or non-alphanumeric, filter the message
                     return true
                 end
             else

@@ -7,6 +7,7 @@ lang: "c++"
 ---
 
 <script>
+    import MDVideo from "$components/MDVideo.svelte"
     import Collapse from "$components/Collapse.svelte";
     import EnigmaStruct from "$snippets/enigmastruct.md";
     import RotorEncryption from "$snippets/rotorencryption.md";
@@ -45,10 +46,7 @@ I got the inspiration to make an Enigma Machine after seeing the movie "The Imit
 ## How it works
 A typical machine has an input board, plugboard, lampboard, three RotorWheels, and a reflector. The rotorwheels have unique configs but they behave like rotating substitution ciphers, so RotorWheel I in position 0 might take an A as input and output it as K, whereas another wheel might output the same as X. The wheels can be placed in any of the three positions, and the initial rotation offset and ringsetting (which shifts the wiring around) can also be changed.
 
-<video width="640" height="360" controls>
-  <source src="/projectmedia/enigmamachine_rotorwheel.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<MDVideo width="640" height="360" src="/projectmedia/enigmamachine_rotorwheel.mp4" />
 
 The first wheel rotates every time a key is pressed, and when it reaches a so called "turnover notch position" it will rotate the next wheel, which in turn will rotate the last wheel when it reaches it's own turnover position, similarly to an odometer. The rotation behaves like an index offset, which makes it so pressing the same key multiple times won't output the same letter multiple times in a row. At the end there is a "reflector" which has pairs of letters mapped together (where a regular wheel would map A to B but not have B mapped to A, the reflector maps A to B and B to A).
 

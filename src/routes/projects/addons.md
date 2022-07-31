@@ -7,6 +7,7 @@ lang: "lua"
 ---
 
 <script>
+    import MDVideo from "$components/MDVideo.svelte"
     import Collapse from "$components/Collapse.svelte";
     import SCF_Filtering from "$snippets/chatfilter_filtering.md"
     import SCF_Commands from "$snippets/chatfilter_commands.md"
@@ -34,6 +35,7 @@ By having small and focused addons that only rely on the base API, it is a lot e
 <br>
 <br>
 
+![Part of my World of Warcraft AddOn list ](/projectmedia/addons/addon_list.jpg "Part of my current AddOn list")
 ## My Addons
 <br>
 
@@ -67,6 +69,8 @@ Code:
 
 
 ### SodaBarHider
+<MDVideo width="1280" height="720" src="/projectmedia/addons/showhidebars.mp4" />
+
 **Feature to implement:** I wanted a way to hide actionbars outside of combat, as when they were full they were occupying a large amount of space on the screen, but I also wanted to be able to use them when needed.
 <br>
 
@@ -79,8 +83,6 @@ Code:
 <Collapse title="barhider.lua">
     <SBH_BarHider />
 </Collapse>
-
-<img src="/projectmedia/hideshowbarscropped.jpg" width="550" height="720" />
 
 <br>
 
