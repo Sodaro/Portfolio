@@ -23,8 +23,14 @@ const config = {
   },
   daisyui: {
     styled: true,
-    themes: ["autumn", "dracula"],
-    darkTheme: "dracula",
+    themes: [{
+      light: {
+        ...require("daisyui/src/colors/themes")["[data-theme=autumn]"],
+      },
+      dark: {
+        ...require("daisyui/src/colors/themes")["[data-theme=dracula]"],
+      }
+    }],
     base: true,
     utils: true,
     logs: true,

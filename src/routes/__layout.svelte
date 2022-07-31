@@ -10,10 +10,9 @@
   onMount(() => {
     themeChange(false)
     
-    var theme = window.localStorage.theme;
-    console.log(theme);
+    var theme = localStorage.theme;
     
-    if (theme === 'dark' || (!('theme' in window.localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark')
     } else {
       document.documentElement.classList.remove('dark')
@@ -21,18 +20,19 @@
 
     var checkBox = document.getElementById('darkcb');
     checkBox.checked = theme == 'dark' ? true : false;
+    console.log(checkBox.checked)
     // 👆 false parameter is required for svelte
 
-    checkBox.addEventListener('change', function () {
-    if(this.checked){
-      //document.documentElement.setAttribute('data-theme', 'dracula');
-      window.localStorage.theme = 'dark';
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-      window.localStorage.theme = 'light';
-    }
-  });
+  //   checkBox.addEventListener('change', function () {
+  //   if(this.checked){
+  //     //document.documentElement.setAttribute('data-theme', 'dracula');
+  //     localStorage.theme = 'dark';
+  //     document.documentElement.classList.add('dark')
+  //   } else {
+  //     document.documentElement.classList.remove('dark')
+  //     localStorage.theme = 'light';
+  //   }
+  // });
 
   })
 

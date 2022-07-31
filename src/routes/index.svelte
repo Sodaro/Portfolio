@@ -1,12 +1,6 @@
 
 
 <script>
-  let activeSectionID = "welcome";
-  let nextSection;
-  let prevSection;
-  let sectionButtonVisible = true;
-  import { onMount } from "svelte";
-
   import Welcome from "../content/Welcome.svelte";
   import Card from "$components/Card.svelte";
   import VidCard from "$components/VidCard.svelte";
@@ -49,11 +43,11 @@
     if(this.checked){
       localStorage.theme = "dark";
       document.documentElement.classList.add('dark')
-      document.documentElement.setAttribute('data-theme', 'dracula');
+      document.documentElement.setAttribute('data-theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark')
       localStorage.theme = "light";
-      document.documentElement.removeAttribute('data-theme', 'dracula');
+      document.documentElement.setAttribute('data-theme', 'light');
     }
   }
 
