@@ -32,11 +32,13 @@ Aside from finding addon development fun, the main reason I make addons is that 
 <br>
 <br>
 By having small and focused addons that only rely on the base API, it is a lot easier for any user to use whatever addons they want as there will be a lot fewer conflicts and it is easy to disable/remove them without losing any other functionality.  
-<br>
+<br>    
 <br>
 
 ![Part of my World of Warcraft AddOn list ](/projectmedia/addons/addon_list.jpg "Part of my current AddOn list")
-## My Addons
+<br>
+
+## Highlighted Addons
 <br>
 
 ### SodaChatFilter
@@ -55,21 +57,22 @@ The message is split on whitespace to get all the parameters provided after "/sc
 
 <br>
 Code:
-<Collapse title="Filtering Commands Lua">
+<Collapse title="Filter Commands Parsing">
 
     <SCF_Commands />
 </Collapse>
 
-<Collapse title="Filtering Behavior Lua">
+<Collapse title="Filtering Behavior">
 
     <SCF_Filtering />
 </Collapse>
 <br>
 
+<MDVideo width="1280" height="720" src="/projectmedia/addons/chatfilter.mp4" alt="video shows messages in wow chat appearing, chat filters getting added and then messages filtered appearing in yellow"/>
 
+<br>
 
 ### SodaBarHider
-<MDVideo width="1280" height="720" src="/projectmedia/addons/showhidebars.mp4" />
 
 **Feature to implement:** I wanted a way to hide actionbars outside of combat, as when they were full they were occupying a large amount of space on the screen, but I also wanted to be able to use them when needed.
 <br>
@@ -80,9 +83,13 @@ Code:
 
 **Solution:** The solution I came up with at the time was to have an additional larger outer frame and a smaller inner frame, when the mouse enters the inner frame the actionbars are shown, and when the mouse enters the outer frame they are hidden.
 
-<Collapse title="barhider.lua">
+<Collapse title="Bar Hiding Behavior">
     <SBH_BarHider />
 </Collapse>
+
+<br>
+
+<MDVideo width="1280" height="720" src="/projectmedia/addons/showhidebars.mp4" alt="a video showing the actionbars in wow overlaid with green rectangles, the actionbars disappearing and reappearing when the mouse enters the outer and inner rectangles"/>
 
 <br>
 
