@@ -7,7 +7,7 @@
       <br />
       <br />
       I love transforming an abstract gameplay idea into a concrete system that the
-      user can intreact with. In my sparetime I love looking at existing games and
+      user can interact with. In my sparetime, I love looking at existing games and
       their systems, and recreating parts myself!
     </p>
   </div>

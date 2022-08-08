@@ -20,20 +20,6 @@
 
     var checkBox = document.getElementById('darkcb');
     checkBox.checked = theme == 'dark' ? true : false;
-    console.log(checkBox.checked)
-    // 👆 false parameter is required for svelte
-
-  //   checkBox.addEventListener('change', function () {
-  //   if(this.checked){
-  //     //document.documentElement.setAttribute('data-theme', 'dracula');
-  //     localStorage.theme = 'dark';
-  //     document.documentElement.classList.add('dark')
-  //   } else {
-  //     document.documentElement.classList.remove('dark')
-  //     localStorage.theme = 'light';
-  //   }
-  // });
-
   })
 
   $: {
