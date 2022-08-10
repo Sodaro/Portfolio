@@ -5,40 +5,7 @@
   import Card from "$components/Card.svelte";
   import VidCard from "$components/VidCard.svelte";
   import SkillIcon from "$components/SkillIcon.svelte";
-  // onMount(() => {
-  //   const sections = document.querySelectorAll("section");
-  //   const navLi = document.querySelectorAll("header nav ul li");
-  //   nextSection = document.getElementById("education");
-  //   window.addEventListener("scroll", () => {
-  //     sections.forEach((section) => {
-  //       const sectionTop = section.offsetTop;
-  //       const sectionHeight = section.clientHeight;
-  //       if (scrollY >= sectionTop - sectionHeight / 3) {
-  //         activeSectionID = section.getAttribute("id");
-  //       }
-  //     });
-  //     navLi.forEach((li) => {
-  //       li.firstChild.classList.remove("active");
-  //       if (li.classList.contains(activeSectionID)) {
-  //         li.firstChild.classList.add("active");
-  //       }
-  //     });
-  //     if (activeSectionID === "welcome")
-  //     {
-  //       nextSection = document.getElementById("featuredprojects");
-  //       sectionButtonVisible = true;
-  //     }
-  //     else if (activeSectionID === "featuredprojects")
-  //     {
-  //       nextSection = document.getElementById("education");
-  //       sectionButtonVisible = true;
-  //     }
-  //     else
-  //     {
-  //       sectionButtonVisible = false;
-  //     }
-  //   });
-  // });
+
   function handleToggle({event}){
     if(this.checked){
       localStorage.theme = "dark";
@@ -71,26 +38,33 @@
   </label>
   <Welcome/>
 </div>
-<div class="flex flex-row gap-8">
-  <div>
-    <h3> Languages: </h3>
+<div class="lg:grid grid-rows-1 lg:grid-cols-4 gap-y-4 mt-12">
+  <div class="col-start-1 row-start-1">
+    <h3>Languages</h3>
     <div class="flex lg:flex-row lg:flex-wrap">
       <SkillIcon icon="lua" useCurrentColor="true" />
       <SkillIcon icon="cpp" />
       <SkillIcon icon="cs" />
     </div>
-    <br>
-    <h3> Engines: </h3>
+  </div>
+  <div class="col-start-2 row-start-1">
+    <h3>Engines</h3>
     <div class="flex lg:flex-row lg:flex-wrap">
       <SkillIcon icon="unity" useCurrentColor="true" />
       <SkillIcon icon="unreal" useCurrentColor="true"/>
     </div>
   </div>
-  <div>
-    <h3>Education:</h3>
+  <div class="col-start-3 col-span-2 row-start-1">
+    <h3>Education</h3>
     <ul>
-      <li class="text-xl">Game Design: Uppsala University 2016-2019</li>
-      <li class="text-xl">Gameprogrammer: Futuregames 2021-2023</li>
+      <li class="text-xl">
+        <span class="font-bold">Game Design</span>
+        <p>Uppsala University 2016-2019</p>
+      </li>
+      <li class="text-xl">
+        <span class="font-bold">Game Programmer</span>
+        <p>Futuregames 2021-2023</p>
+      </li>
     </ul>
   </div>
 </div>
