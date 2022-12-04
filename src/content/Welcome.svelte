@@ -1,17 +1,16 @@
-<div id="welcomegrid" class="lg:grid grid-cols-3 grid-rows-1 lg:grid-cols-3 gap-y-4">
+<div
+  id="welcomegrid"
+  class="lg:grid grid-cols-3 grid-rows-1 lg:grid-cols-4 gap-y-4"
+>
   <div id="welcometext" class="col-start-1 col-end-3">
     <h1 class="">Hi, I'm David Bång!</h1>
     <p class="text-2xl">
-      I'm a programmer with a passion for all things gamedev.
-
-      <br />
-      <br />
-      I love transforming an abstract gameplay idea into a concrete system that the
-      user can interact with. In my sparetime, I love looking at existing games and
-      their systems, and recreating parts myself!
+      I'm a game programmer with a special interest in gameplay systems. I love
+      transforming an abstract gameplay idea into a concrete system that the
+      user can interact with.
     </p>
   </div>
-  <div class="avatar col-start-3">
+  <div class="avatar col-start-4">
     <div class="w-64 h-64 object-contain mask lg:rounded-bl-3xl">
       <img src="/profilepic2.jpg" alt="dave" />
     </div>
@@ -20,21 +19,21 @@
 
 <div class="flex flex-col mt-12">
   <div class="flex">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    class="h-10 w-10"
-    viewBox="0 0 20 20"
-    fill="currentColor"
-  >
-    <path
-      fillRule="evenodd"
-      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-      clipRule="evenodd"
-    />
-  </svg>
-  <p class="bottom-0 text-xl">Stockholm, Sweden</p>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-10 w-10"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fillRule="evenodd"
+        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+        clipRule="evenodd"
+      />
+    </svg>
+    <p class="bottom-0 text-xl">Stockholm, Sweden</p>
   </div>
-  <div
+  <!-- <div
     id="mysocialicons"
     class="flex flex-row gap-4 pt-8 row-start-2 col-start-2"
   >
@@ -93,5 +92,5 @@
       class="btn btn-primary text-white font-bold py-2 px-4 rounded col-span-2"
       >Contact!</a
     >
-  </div>
+  </div> -->
 </div>

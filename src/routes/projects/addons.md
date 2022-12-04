@@ -9,20 +9,21 @@ lang: "lua"
 <script>
     import MDVideo from "$components/MDVideo.svelte"
     import Collapse from "$components/Collapse.svelte";
+    import ButtonLink from "$components/ButtonLink.svelte";
     import SCF_Filtering from "$snippets/chatfilter_filtering.md"
     import SCF_Commands from "$snippets/chatfilter_commands.md"
     import SBH_BarHider from "$snippets/barhider.md"
-    import Button from "$components/Button.svelte";
 </script>
 
 <svelte:head>
 <title>DavidB | AddOns</title>
 </svelte:head>
 
-<Button href="/">
-</Button>
+<!-- <Button href="/">
+</Button> -->
 
 # WoW Addons
+<section>
 
 ## What is an AddOn and why make them?
 An AddOn (capitalization varies but the meaning is the same) is a modification (or mod) to the game World of Warcraft. Addons are written in Lua and use the game API to change the UI, execute logic when events happen, etc.  
@@ -93,4 +94,7 @@ Code:
 
 <br>
 
-[link to addon repository](https://github.com/orgs/SodaAddons/repositories)
+<ButtonLink href="https://github.com/orgs/SodaAddons/repositories">
+    AddOn Github
+</ButtonLink>
+</section>
