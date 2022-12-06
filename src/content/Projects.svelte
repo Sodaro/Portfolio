@@ -11,7 +11,6 @@
       alt="a screenshot from World of Warcraft showing 4 green rectangles in debug view"
       title="WoW Addons"
       descr="A selection of World of Warcraft AddOns I have made over the years."
-      pos="object-right"
       lang="lua"
       groupType="solo"
     />
@@ -44,8 +43,6 @@
       lang="cpp"
       engine="unreal"
       groupType="team"
-      objectFit="object-cover"
-      pos="object-right"
     />
     <ProjectCard
       dir="projects/bomberbots"
