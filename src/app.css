@@ -3,32 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 /* @import url(/prism-dracula.css); */
-@layer components {
-  .mysection {
-    @apply place-content-start flex flex-row lg:flex-col w-full;
-    height:50vh;
-  }
-  .mycolsection {
-    @apply place-content-start flex flex-col w-full h-fit;
-  }
+/* @layer components {
   .navButton{
     @apply bg-base-100
   }
   .navButton.active{
     @apply bg-base-300
   }
-  @media only screen and (max-width: 600px) {
-    .mycolsection {
-      @apply place-content-start flex flex-col h-fit w-full;
-    }
-    .mysection {
-      @apply place-content-start flex flex-row lg:flex-col w-full h-fit;
-    }
-  }
-}
+} */
 
 
-@layer base {
+/* @layer base {
   a {
     text-decoration: underline;
   }
@@ -47,5 +32,5 @@
   section {
     @apply mb-12
   }
-}
+} */
 

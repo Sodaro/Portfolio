@@ -1,5 +1,4 @@
 <script>
-  export let activeSectionID;
   import { page } from "$app/stores";
   function scrollIntoView({ target }) {
     const el = document.querySelector(target.getAttribute("href"));
@@ -9,7 +8,7 @@
     el.scrollIntoView({
       behavior: "smooth",
     });
-    console.log(page.routeId);
+    console.log(page.route.id);
   }
   function handleToggle({ event }) {
     if (this.checked) {
@@ -24,11 +23,11 @@
   }
 </script>
 
-<header class="top-0 left-0 sticky z-50 bg-base-100">
+<header class="top-0 left-0 sticky z-50 bg-base-100 not-prose">
   <nav>
-    <div class="navbar-start lg:hidden w-full flex justify-between">
+    <div class="navbar lg:hidden w-full flex justify-between">
       <div class="dropdown">
-        <label tabindex="0" class="btn btn-ghost">
+        <label class="btn btn-ghost" for="burgermenu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
@@ -44,7 +43,6 @@
           >
         </label>
         <ul
-          tabindex="0"
           class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 w-52"
         >
           <li class="item"><a href="/">Welcome</a></li>
@@ -85,7 +83,7 @@
       class="menu w-full hidden lg:flex lg:flex-row items-center justify-between"
     >
       <li class="item welcome">
-        {#if $page.routeId == undefined || $page.routeId == ""}
+        {#if $page.route.id == undefined || $page.route.id == ""}
           <a
             href="#welcome"
             on:click|preventDefault={scrollIntoView}
@@ -96,7 +94,7 @@
         {/if}
       </li>
       <li class="item featuredprojects">
-        {#if $page.routeId == undefined || $page.routeId == ""}
+        {#if $page.route.id == undefined || $page.route.id == ""}
           <a
             href="#featuredprojects"
             on:click|preventDefault={scrollIntoView}

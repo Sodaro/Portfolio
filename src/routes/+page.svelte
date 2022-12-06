@@ -13,4 +13,4 @@
 </div>
 
 <Projects />
-<SkillsLanguages />
+<!-- <SkillsLanguages /> -->

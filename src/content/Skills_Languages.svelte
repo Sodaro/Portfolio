@@ -2,7 +2,7 @@
   import Icon from "$components/Icon.svelte";
 </script>
 
-<div class="lg:grid grid-rows-1 lg:grid-cols-4 gap-y-4 mt-12">
+<div class="lg:grid grid-rows-1 lg:grid-cols-3">
   <div class="col-start-1 row-start-1">
     <h3>Languages</h3>
     <div class="flex lg:flex-row lg:flex-wrap">

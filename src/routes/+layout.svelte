@@ -12,7 +12,6 @@
     themeChange(false);
 
     var theme = localStorage.theme;
-
     var stored_theme = "theme" in localStorage;
     var should_use_light =
       theme === "light" ||
@@ -58,8 +57,11 @@
   </script>
 </svelte:head>
 
-<div class="min-h-screen mx-auto lg:w-2/4 lg:py-32 grid mycontainer">
+
+<div class="p-8">
   <Header />
-  <slot />
+  <div class="min-h-screen mx-auto 2xl:w-1/2 2xl:py-32 grid gap-8 prose prose-xl xl:prose-2xl max-w-none dark:text-white mycontainer">
+    <slot />
+  </div>
   <Footer />
 </div>

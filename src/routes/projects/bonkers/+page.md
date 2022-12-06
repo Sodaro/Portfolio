@@ -9,15 +9,17 @@ lang: "c++"
 <script>
     import MDVideo from "$components/MDVideo.svelte"
     import Collapse from "$components/Collapse.svelte";
+    import SectionComponent from "$components/SectionComponent.svelte";
 </script>
 
 <svelte:head>
 <title>DavidB | Bonkers</title>
 </svelte:head>
 
+<SectionComponent>
+
 # Bonkers
-<section>
 
 ## WIP
 
-</section>
+</SectionComponent>

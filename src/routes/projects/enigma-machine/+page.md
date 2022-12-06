@@ -14,6 +14,7 @@ lang: "c++"
     import EnigmaEncryption from "$snippets/enigmaencryption.md";
     import ButtonLink from "$components/ButtonLink.svelte";
     import Button from "$components/Button.svelte";
+    import SectionComponent from "$components/SectionComponent.svelte";
 </script>
 
 <svelte:head>
@@ -23,12 +24,13 @@ lang: "c++"
 <Button href="/">
 </Button>
 
+<SectionComponent>
+
 # Enigma Machine Project
-<section>
 
 ## Background
 I got the inspiration to make an Enigma Machine after seeing the movie "The Imitation Game" and watching a few Computerphile youtube-videos that talked about how the machine worked and how it was cracked. My goal with the project was to make a machine that had rotors you could manually rotate and swap out for different configs and to have a working lampboard that shows the encrypted letter. I did not look at any existing algorithms, instead, I limited myself to the following resources:
-<br>
+
 <ButtonLink href="https://www.101computing.net/enigma-machine-emulator/">
     Emulator
 </ButtonLink>
@@ -39,9 +41,6 @@ I got the inspiration to make an Enigma Machine after seeing the movie "The Imit
     Wikipedia page
 </ButtonLink>
 
-</section>
-
-<section>
 
 ## How it works
 A typical machine has an input board, plugboard, lampboard, three RotorWheels, and a reflector. The rotor wheels have unique configs but they behave like rotating substitution ciphers, so RotorWheel I in position 0 might take an A as input and output it as K, whereas another wheel might output the same as X. The wheels can be placed in any of the three positions, and the initial rotation offset and ring setting (which shifts the wiring around) can also be changed.
@@ -64,7 +63,7 @@ The first wheel rotates every time a key is pressed, and when it reaches a so-ca
 - 9\. Wheel 1 receives E and outputs B
 - 10\. **Lamp with letter B lights up**
 
-<br>
+
 
 - 1\. A is pressed
 - 2\. Wheel 1 rotates and a signal is sent from the keyboard to Wheel 1
@@ -72,7 +71,7 @@ The first wheel rotates every time a key is pressed, and when it reaches a so-ca
 - 4\. ...
 - 10\. **Lamp with letter D lights up**
 
-<br>
+
 
 - 1\. A is pressed
 - 2\. Wheel 1 rotates and a signal is sent from the keyboard to Wheel 1
@@ -81,7 +80,7 @@ The first wheel rotates every time a key is pressed, and when it reaches a so-ca
 - 10\. **Lamp with letter Z lights up**
 
 </Collapse>
-<br>
+
 
 ## Implementation
 For easy access and quick access to the interactable input key objects, lamps, and plugboard ports I chose to use a hashmap with structs.
@@ -104,4 +103,4 @@ When a key is pressed I call EncodeLetter with the alphabet position of the lett
 
 </Collapse>
 
-</section>
+</SectionComponent>
