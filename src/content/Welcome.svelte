@@ -1,10 +1,10 @@
 <div
   id="welcomegrid"
-  class="lg:grid grid-cols-3 grid-rows-1 lg:grid-cols-4 gap-y-4"
+  class="md:grid md:grid-cols-4"
 >
-  <div id="welcometext" class="col-start-1 col-end-3 prose prose-xl mb-0 max-w-none dark:text-white">
-    <h1 class="mb-0">Hi, I'm David Bång!</h1>
-    <p class="text-2xl">
+  <div id="welcometext" class="col-start-1 md:col-end-3">
+    <h1 id="welcome" class="mb-0">Hi, I'm David Bång!</h1>
+    <p class="">
       I'm a game programmer with a special interest in gameplay systems. I love
       transforming an abstract gameplay idea into a concrete system that the
       user can interact with.
@@ -16,10 +16,8 @@
     <div class="badge badge-primary text-xl p-4">Unity</div>
     <div class="badge badge-primary text-xl p-4">Löve2D</div>
   </div>
-  <div class="avatar col-start-4 not-prose">
-    <div class="w-64 h-64 border-4 rounded-xl">
-      <img src="/profilepic2.jpg" alt="dave" />
-    </div>
+  <div class="avatar md:col-start-4 not-prose w-fit h-fit">
+    <img src="/profilepic2.jpg" alt="dave" class="w-80 h-80 max-w-xs max-h-xs border-8 rounded-xl"/>
   </div>
 </div>
 

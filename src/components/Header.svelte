@@ -2,6 +2,7 @@
   import { page } from "$app/stores";
   function scrollIntoView({ target }) {
     const el = document.querySelector(target.getAttribute("href"));
+    console.log(page.route.id);
     if (!el) {
       return;
     }
@@ -80,30 +81,11 @@
       </label>
     </div>
     <ul
-      class="menu w-full hidden lg:flex lg:flex-row items-center justify-between"
+      class="menu w-full hidden lg:flex lg:flex-row items-center justify-evenly"
     >
       <li class="item welcome">
-        {#if $page.route.id == undefined || $page.route.id == ""}
-          <a
-            href="#welcome"
-            on:click|preventDefault={scrollIntoView}
-            class:active={true}>Welcome</a
-          >
-        {:else}
-          <a href="/#welcome" class:active={true}>Welcome</a>
-        {/if}
-      </li>
-      <li class="item featuredprojects">
-        {#if $page.route.id == undefined || $page.route.id == ""}
-          <a
-            href="#featuredprojects"
-            on:click|preventDefault={scrollIntoView}
-            class:active={false}>Featured Projects</a
-          >
-        {:else}
-          <a href="/#featuredprojects" class:active={false}>Featured Projects</a
-          >
-        {/if}
+        <a href="#welcome" class:active={$page.route.id === ""} on:click|preventDefault={scrollIntoView}>Welcome</a>
+        <a href="#addons" class:active={$page.route.id === "addons"} on:click|preventDefault={scrollIntoView}>Featured Projects</a>
       </li>
       <!-- <li class="item education">
         <a

@@ -60,7 +60,7 @@
 
 <div class="p-8">
   <Header />
-  <div class="min-h-screen mx-auto 2xl:w-1/2 2xl:py-32 grid gap-8 prose prose-xl xl:prose-2xl max-w-none dark:text-white mycontainer">
+  <div class="min-h-screen mx-auto grid gap-8 prose prose-xl lg:w-9/12 lg:py-32 xl:prose-2xl max-w-none dark:text-white mycontainer">
     <slot />
   </div>
   <Footer />

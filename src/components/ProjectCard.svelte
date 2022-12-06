@@ -20,7 +20,7 @@
   // }
 </script>
 
-<div class ="not-prose z-1 2xl:w-5/12">
+<div class="not-prose z-1 lg:box-border lg:w-1/2 p-2">
 <a href={dir} class="no-underline">
   <div class="card w-full h-full shadow-2xl bg-primary hover:bg-secondary">
     <figure class="">

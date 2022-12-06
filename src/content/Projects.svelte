@@ -4,7 +4,7 @@
 
 <div>
   <h2 class="">Featured Projects</h2>
-  <div class="games flex flex-col gap-8 lg:flex-row lg:flex-wrap w-full h-fit">
+  <div class="games flex flex-col w-full h-fit lg:flex-row lg:flex-wrap">
     <ProjectCard
       dir="/projects/addons"
       posterSrc="/projectmedia/addons/hideshowbars3.jpg"
