@@ -1,20 +1,20 @@
 const config = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     extend: {
       typography: {
         DEFAULT: {
           css: {
-            color: '#333',
+            color: "#333",
             a: {
-              color: '#3182ce',
-              '&:hover': {
-                color: '#2c5282',
+              color: "#3182ce",
+              "&:hover": {
+                color: "#2c5282",
               },
-            h2: {
-              textAlign: "center",
-            },
+              h2: {
+                textAlign: "center",
+              },
             },
           },
         },
@@ -23,14 +23,16 @@ const config = {
   },
   daisyui: {
     styled: true,
-    themes: [{
-      light: {
-        ...require("daisyui/src/colors/themes")["[data-theme=autumn]"],
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/colors/themes")["[data-theme=autumn]"],
+        },
+        dark: {
+          ...require("daisyui/src/colors/themes")["[data-theme=dracula]"],
+        },
       },
-      dark: {
-        ...require("daisyui/src/colors/themes")["[data-theme=dracula]"],
-      }
-    }],
+    ],
     base: true,
     utils: true,
     logs: true,

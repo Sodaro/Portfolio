@@ -7,14 +7,14 @@ lang: "c++"
 ---
 
 <script>
-    import MDVideo from "$components/MDVideo.svelte"
-    import Collapse from "$components/Collapse.svelte";
-    import EnigmaStruct from "$snippets/enigmastruct.md";
-    import RotorEncryption from "$snippets/rotorencryption.md";
-    import EnigmaEncryption from "$snippets/enigmaencryption.md";
-    import ButtonLink from "$components/ButtonLink.svelte";
-    import Button from "$components/Button.svelte";
-    import SectionComponent from "$components/SectionComponent.svelte";
+    import MDVideo from "$lib/components/MDVideo.svelte"
+    import Collapse from "$lib/components/Collapse.svelte";
+    import EnigmaStruct from "$lib/snippets/enigmastruct.md";
+    import RotorEncryption from "$lib/snippets/rotorencryption.md";
+    import EnigmaEncryption from "$lib/snippets/enigmaencryption.md";
+    import ButtonLink from "$lib/components/ButtonLink.svelte";
+    import Button from "$lib/components/Button.svelte";
+    import SectionComponent from "$lib/components/SectionComponent.svelte";
 </script>
 
 <svelte:head>

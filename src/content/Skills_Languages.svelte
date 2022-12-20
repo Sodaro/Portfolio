@@ -1,5 +1,5 @@
 <script>
-  import Icon from "$components/Icon.svelte";
+  import Icon from "$lib/components/Icon.svelte";
 </script>
 
 <div class="lg:grid grid-rows-1 lg:grid-cols-3">

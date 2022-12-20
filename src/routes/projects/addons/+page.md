@@ -7,13 +7,13 @@ lang: "lua"
 ---
 
 <script>
-    import MDVideo from "$components/MDVideo.svelte"
-    import Collapse from "$components/Collapse.svelte";
-    import ButtonLink from "$components/ButtonLink.svelte";
-    import SectionComponent from "$components/SectionComponent.svelte"
-    import SCF_Filtering from "$snippets/chatfilter_filtering.md"
-    import SCF_Commands from "$snippets/chatfilter_commands.md"
-    import SBH_BarHider from "$snippets/barhider.md"
+    import MDVideo from "$lib/components/MDVideo.svelte"
+    import Collapse from "$lib/components/Collapse.svelte";
+    import ButtonLink from "$lib/components/ButtonLink.svelte";
+    import SectionComponent from "$lib/components/SectionComponent.svelte"
+    import SCF_Filtering from "$lib/snippets/chatfilter_filtering.md"
+    import SCF_Commands from "$lib/snippets/chatfilter_commands.md"
+    import SBH_BarHider from "$lib/snippets/barhider.md"
 </script>
 
 <svelte:head>

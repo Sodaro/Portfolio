@@ -7,9 +7,9 @@ lang: "c++"
 ---
 
 <script>
-    import MDVideo from "$components/MDVideo.svelte"
-    import Collapse from "$components/Collapse.svelte";
-    import SectionComponent from "$components/SectionComponent.svelte";
+    import MDVideo from "$lib/components/MDVideo.svelte"
+    import Collapse from "$lib/components/Collapse.svelte";
+    import SectionComponent from "$lib/components/SectionComponent.svelte";
 </script>
 
 <svelte:head>

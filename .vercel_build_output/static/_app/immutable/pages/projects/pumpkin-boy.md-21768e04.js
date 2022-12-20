@@ -1,3 +1,0 @@
-import{S as v,i as b,s as E,e as d,t as u,k as G,c as _,a as f,h,d as n,m as S,g as y,G as r,n as P}from"../../chunks/index-f6b2bc5e.js";function U(x){let t,l,i,a,o,p,m;return{c(){t=d("h1"),l=u("Uses"),i=G(),a=d("p"),o=d("strong"),p=u("Pumpkin boy?"),m=u(`
-\u{1F383}`)},l(e){t=_(e,"H1",{});var s=f(t);l=h(s,"Uses"),s.forEach(n),i=S(e),a=_(e,"P",{});var c=f(a);o=_(c,"STRONG",{});var k=f(o);p=h(k,"Pumpkin boy?"),k.forEach(n),m=h(c,`
-\u{1F383}`),c.forEach(n)},m(e,s){y(e,t,s),r(t,l),y(e,i,s),y(e,a,s),r(a,o),r(o,p),r(a,m)},p:P,i:P,o:P,d(e){e&&n(t),e&&n(i),e&&n(a)}}}const z={title:"Pumpkin Boy",date:"2021-12-14",description:"Thirdperson Puzzle game made in Unity. Group project."};class T extends v{constructor(t){super(),b(this,t,null,U,E,{})}}export{T as default,z as metadata};

@@ -1,7 +1,0 @@
-import{S as B,i as F,s as H,k as c,q as w,a as k,l,m as o,r as b,h,c as x,n as P,b as q,F as a,B as g}from"../../../../chunks/index-c3e420e7.js";function z(E){let e,s,d,u,r,p,f,n,m;return{c(){e=c("article"),s=c("h1"),d=w("Garlic bread with cheese: What the science tells us"),u=k(),r=c("p"),p=w(`For years parents have espoused the health benefits of eating garlic bread with cheese to their
-    children, with the food earning such an iconic status in our culture that kids will often dress
-    up as warm, cheesy loaf for Halloween.`),f=k(),n=c("p"),m=w(`But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
-    springing up around the country.`),this.h()},l(i){e=l(i,"ARTICLE",{class:!0});var t=o(e);s=l(t,"H1",{});var y=o(s);d=b(y,"Garlic bread with cheese: What the science tells us"),y.forEach(h),u=x(t),r=l(t,"P",{});var _=o(r);p=b(_,`For years parents have espoused the health benefits of eating garlic bread with cheese to their
-    children, with the food earning such an iconic status in our culture that kids will often dress
-    up as warm, cheesy loaf for Halloween.`),_.forEach(h),f=x(t),n=l(t,"P",{});var v=o(n);m=b(v,`But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
-    springing up around the country.`),v.forEach(h),t.forEach(h),this.h()},h(){P(e,"class","")},m(i,t){q(i,e,t),a(e,s),a(s,d),a(e,u),a(e,r),a(r,p),a(e,f),a(e,n),a(n,m)},p:g,i:g,o:g,d(i){i&&h(e)}}}class G extends B{constructor(e){super(),F(this,e,null,z,H,{})}}export{G as default};

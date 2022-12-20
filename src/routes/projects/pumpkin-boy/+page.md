@@ -7,8 +7,8 @@ lang: "c#"
 ---
 
 <script>
-    import Button from "$components/Button.svelte";
-    import SectionComponent from "$components/SectionComponent.svelte";
+    import Button from "$lib/components/Button.svelte";
+    import SectionComponent from "$lib/components/SectionComponent.svelte";
 </script>
 
 <svelte:head>
