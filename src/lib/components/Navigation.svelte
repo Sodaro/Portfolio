@@ -24,7 +24,7 @@
   }
 </script>
 
-<header class="top-0 left-0 sticky z-50 bg-base-100 not-prose">
+<header class="top-16 left-0 sticky z-50 bg-base-100 not-prose">
   <nav>
     <div class="navbar lg:hidden w-full flex justify-between">
       <div class="dropdown">
@@ -80,33 +80,62 @@
         >
       </label>
     </div>
-    <ul
-      class="menu w-full hidden lg:flex lg:flex-row items-center justify-evenly"
-    >
+    <ul class="menu w-full hidden lg:text-xl lg:flex lg:flex-col lg:py-4">
       <li class="item welcome">
-        <a href="#welcome" class:active={$page.route.id === ""} on:click|preventDefault={scrollIntoView}>Welcome</a>
-        <a href="#addons" class:active={$page.route.id === "addons"} on:click|preventDefault={scrollIntoView}>Featured Projects</a>
+        <a href="/" class:active={$page.route.id === ""}> Home </a>
       </li>
-      <!-- <li class="item education">
-        <a
-          href="#skills-education"
-          on:click|preventDefault={scrollIntoView}
-          class:active={false}>Skills/Education</a
+
+      <div class="divider px-4" />
+
+      <li class="item addons">
+        <a href="/projects/addons" class:active={$page.route.id === "addons"}
+          >WoW AddOns</a
         >
-      </li> -->
-      <div id="navicons" class="right-0 flex flex-row gap-4">
-        <!-- <a href="https://twitter.com/Sodaro_" class="w-fit">
+      </li>
+      <li class="item enigma">
+        <a href="/projects/enigma-machine" class:active={$page.route.id === "addons"}
+          >Enigma Machine</a
+        >
+      </li>
+      <li class="item bonkers">
+        <a href="/projects/bonkers" class:active={$page.route.id === "addons"}>Bonkers</a>
+      </li>
+      <li class="item bomberbots">
+        <a href="/projects/bomberbots" class:active={$page.route.id === "addons"}
+          >Bomberbots</a
+        >
+      </li>
+
+      <div class="divider px-4" />
+
+      <li class="item">
+        <label class="rounded swap swap-rotate grid grid-cols-2">
+          <div class="col-start-1">Toggle theme</div>
+          <input
+            id="darkcb"
+            type="checkbox"
+            on:click={handleToggle}
+            data-act-class="ACTIVECLASS"
+          />
           <svg
+            class="swap-on fill-current w-8 h-8 col-start-2"
             xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            class="h-10 bi bi-twitter"
-            viewBox="0 0 16 16"
+            viewBox="0 0 24 24"
+            ><path
+              d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
+            /></svg
           >
-            <path
-              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-            />
-          </svg>
-        </a> -->
+          <svg
+            class="swap-off fill-current w-8 h-8 col-start-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            ><path
+              d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
+            /></svg
+          >
+        </label>
+      </li>
+      <div id="navicons" class="right-0 flex flex-row gap-4 py-4">
         <a
           href="https://www.linkedin.com/in/david-b%C3%A5ng-51742921a/"
           class="w-fit"
@@ -157,36 +186,6 @@
             />
           </svg>
         </a>
-        <label
-          class="btn-primary text-white rounded swap swap-rotate h-10 w-10"
-        >
-          <!-- this hidden checkbox controls the state -->
-          <input
-            id="darkcb"
-            type="checkbox"
-            on:click={handleToggle}
-            data-act-class="ACTIVECLASS"
-          />
-          <div class="swap-on">
-            <!-- sun icon -->
-          </div>
-          <svg
-            class="swap-on fill-current w-8 h-8"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            ><path
-              d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
-            /></svg
-          >
-          <svg
-            class="swap-off fill-current w-8 h-8"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            ><path
-              d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
-            /></svg
-          >
-        </label>
       </div>
     </ul>
   </nav>

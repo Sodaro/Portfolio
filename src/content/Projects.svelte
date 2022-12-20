@@ -39,7 +39,7 @@
       posterSrc="/projectmedia/bonkers/cover.png"
       alt="The pumpkin boy character with the head and body on a switch and an open door"
       title="Bonkers"
-      descr="Thirdperson Puzzle game made in Unity."
+      descr="Local multiplayer arena-brawler."
       lang="cpp"
       engine="unreal"
       groupType="team"

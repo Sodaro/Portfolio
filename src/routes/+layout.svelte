@@ -4,7 +4,7 @@
 
   import { onMount } from "svelte";
   import { themeChange } from "theme-change";
-  import Header from "$lib/components/Header.svelte";
+  import Navigation from "$lib/components/Navigation.svelte";
   import Footer from "$lib/components/Footer.svelte";
 
   // NOTE: the element that is using one of the theme attributes must be in the DOM on mount
@@ -57,11 +57,12 @@
   </script>
 </svelte:head>
 
-
-<div class="p-8">
-  <Header />
-  <div class="min-h-screen mx-auto grid gap-8 prose prose-xl lg:w-9/12 lg:py-32 xl:prose-2xl max-w-none dark:text-white mycontainer">
-    <slot/>
+<div class="p-8 lg:py-16 lg:flex lg:flex-row">
+  <Navigation />
+  <div
+    class="min-h-screen mx-auto grid gap-8 prose prose-xl lg:w-9/12  xl:prose-2xl max-w-none dark:text-white mycontainer"
+  >
+    <slot />
   </div>
-  <Footer />
 </div>
+<Footer />
