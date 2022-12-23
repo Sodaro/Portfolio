@@ -1,3 +1,7 @@
+<script>
+    import Badge from "../lib/components/Badge.svelte";
+
+</script>
 <div
   id="welcomegrid"
   class="md:grid md:grid-cols-4"
@@ -9,12 +13,12 @@
       transforming an abstract gameplay idea into a concrete system that the
       user can interact with.
     </p>
-    <div class="badge badge-primary text-xl p-4">C#</div>
-    <div class="badge badge-primary text-xl p-4">C++</div>
-    <div class="badge badge-primary text-xl p-4">Lua</div>
-    <div class="badge badge-primary text-xl p-4">Unreal Engine</div>
-    <div class="badge badge-primary text-xl p-4">Unity</div>
-    <div class="badge badge-primary text-xl p-4">Löve2D</div>
+    <Badge>C#</Badge>
+    <Badge>C++</Badge>
+    <Badge>Lua</Badge>
+    <Badge>Unreal Engine</Badge>
+    <Badge>Unity</Badge>
+    <Badge>Löve2D</Badge>
   </div>
   <div class="avatar md:col-start-4 not-prose w-fit h-fit">
     <img src="/profilepic2.jpg" alt="dave" class="w-80 h-80 max-w-xs max-h-xs border-8 rounded-xl"/>

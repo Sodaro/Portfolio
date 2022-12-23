@@ -11,13 +11,7 @@
   export let engine = "";
   export let groupType = "";
   export let posterSrc = "";
-  // function handleMouseOver(event) {
-  //   event.target.play();
-  // }
-  // function handleMouseOut(event) {
-  //   event.target.pause();
-  //   // event.target.currentTime=0;
-  // }
+  export let objectFit = "object-cover";
 </script>
 
 <div class="not-prose z-1 lg:box-border lg:w-1/2 p-2">
@@ -25,13 +19,13 @@
   <div class="card w-full h-full shadow-2xl bg-primary hover:bg-secondary">
     <figure class="">
       {#if src}
-        <video class="object-cover" muted autoplay loop>
+        <video class="{objectFit}" muted autoplay loop>
           <source {src} {type} />
           <span class="sr-only">{alt}</span>
           Your browser does not support the video tag.
         </video>
       {:else}
-        <img src={posterSrc} class="object-cover" alt={alt} />
+        <img src={posterSrc} class="{objectFit}" alt={alt} />
       {/if}
     </figure>
     <div class="w-full py-2 px-8">

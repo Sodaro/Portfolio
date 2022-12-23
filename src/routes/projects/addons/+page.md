@@ -1,11 +1,3 @@
----
-title: Addons
-date: "2022-07-05"
-thumb: "hideshowbars.jpg"
-pos: "right"
-lang: "lua"
----
-
 <script>
     import MDVideo from "$lib/components/MDVideo.svelte"
     import Collapse from "$lib/components/Collapse.svelte";

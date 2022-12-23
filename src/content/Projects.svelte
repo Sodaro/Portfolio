@@ -16,7 +16,7 @@
     />
     <ProjectCard
       dir="projects/enigma-machine"
-      src="/projectmedia/UnrealEnigmaMachine.mp4"
+      src="/projectmedia/UnrealEnigmaMachine2.mp4"
       alt="Video showing 'Hello World' be encrypted on an EnigmaMachine"
       title="Enigma Machine"
       descr="An interactible Enigma Machine made in Unreal Engine C++"
@@ -36,13 +36,14 @@
     />
     <ProjectCard
       dir="/projects/bonkers"
-      posterSrc="/projectmedia/bonkers/cover.png"
+      posterSrc="/projectmedia/bonkers/cover2.png"
       alt="The pumpkin boy character with the head and body on a switch and an open door"
       title="Bonkers"
       descr="Local multiplayer arena-brawler."
       lang="cpp"
       engine="unreal"
       groupType="team"
+      objectFit="object-cover"
     />
     <ProjectCard
       dir="projects/bomberbots"

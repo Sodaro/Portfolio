@@ -1,11 +1,3 @@
----
-title: Pumpkin Boy
-date: "2022-07-02"
-thumb: "pumpkinboy.png"
-pos: "center"
-lang: "c#"
----
-
 <script>
     import Button from "$lib/components/Button.svelte";
     import SectionComponent from "$lib/components/SectionComponent.svelte";

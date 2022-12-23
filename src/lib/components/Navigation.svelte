@@ -1,5 +1,6 @@
 <script>
   import { page } from "$app/stores";
+    import ProjectListItems from "./ProjectListItems.svelte";
   function scrollIntoView({ target }) {
     const el = document.querySelector(target.getAttribute("href"));
     console.log(page.route.id);
@@ -24,11 +25,11 @@
   }
 </script>
 
-<header class="top-16 left-0 sticky z-50 bg-base-100 not-prose">
+<header class="top-0 left-0 lg:top-16 sticky h-fit z-50 bg-base-100 not-prose">
   <nav>
     <div class="navbar lg:hidden w-full flex justify-between">
-      <div class="dropdown">
-        <label class="btn btn-ghost" for="burgermenu">
+      <div id="burgermenu" class="dropdown">
+        <label tabindex="-1" class="btn btn-ghost" for="burgermenu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
@@ -43,16 +44,10 @@
             /></svg
           >
         </label>
-        <ul
+        <ul tabindex="-1"
           class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 w-52"
         >
-          <li class="item"><a href="/">Welcome</a></li>
-          <li class="item">
-            <a href="/#featuredprojects">Featured Projects</a>
-          </li>
-          <!-- <li class="item">
-            <a href="/#skills-education">Skills/Education</a>
-          </li> -->
+        <ProjectListItems />
         </ul>
       </div>
       <label class="swap swap-rotate">
@@ -80,31 +75,14 @@
         >
       </label>
     </div>
-    <ul class="menu w-full hidden lg:text-xl lg:flex lg:flex-col lg:py-4">
+    <ul class="menu w-full hidden h-fit lg:text-xl lg:flex lg:flex-col lg:py-4">
       <li class="item welcome">
-        <a href="/" class:active={$page.route.id === ""}> Home </a>
+        <a href="/"> Home </a>
       </li>
 
       <div class="divider px-4" />
 
-      <li class="item addons">
-        <a href="/projects/addons" class:active={$page.route.id === "addons"}
-          >WoW AddOns</a
-        >
-      </li>
-      <li class="item enigma">
-        <a href="/projects/enigma-machine" class:active={$page.route.id === "addons"}
-          >Enigma Machine</a
-        >
-      </li>
-      <li class="item bonkers">
-        <a href="/projects/bonkers" class:active={$page.route.id === "addons"}>Bonkers</a>
-      </li>
-      <li class="item bomberbots">
-        <a href="/projects/bomberbots" class:active={$page.route.id === "addons"}
-          >Bomberbots</a
-        >
-      </li>
+      <ProjectListItems />
 
       <div class="divider px-4" />
 

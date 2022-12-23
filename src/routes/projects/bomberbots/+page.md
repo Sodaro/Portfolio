@@ -1,11 +1,3 @@
----
-title: Enigma Machine
-date: "2022-07-03"
-thumb: "enigmamachine.png"
-pos: "center"
-lang: "c++"
----
-
 <script>
     import MDVideo from "$lib/components/MDVideo.svelte"
     import Collapse from "$lib/components/Collapse.svelte";
@@ -21,5 +13,13 @@ lang: "c++"
 # Bömberbots
 
 ## WIP
+
+- 4 months
+- Tomas Wallin "link here"
+- Lua
+- löve2d
+- debug tools
+- render sorting
+- ecs
 
 </SectionComponent>

@@ -57,7 +57,7 @@
   </script>
 </svelte:head>
 
-<div class="p-8 lg:py-16 lg:flex lg:flex-row">
+<div class="p-8 lg:p-8 lg:py-16 lg:flex lg:flex-row">
   <Navigation />
   <div
     class="min-h-screen mx-auto grid gap-8 prose prose-xl lg:w-9/12  xl:prose-2xl max-w-none dark:text-white mycontainer"
