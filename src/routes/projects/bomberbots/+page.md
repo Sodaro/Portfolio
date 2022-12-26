@@ -2,6 +2,7 @@
     import MDVideo from "$lib/components/MDVideo.svelte"
     import Collapse from "$lib/components/Collapse.svelte";
     import SectionComponent from "$lib/components/SectionComponent.svelte";
+    import ButtonLink from "$lib/components/ButtonLink.svelte";
 </script>
 
 <svelte:head>
@@ -11,6 +12,11 @@
 <SectionComponent>
 
 # Bömberbots
+
+<ButtonLink isGithubLink=true href="https://github.com/Sodaro/bomberbots">
+    Bomberbots Repo
+</ButtonLink>
+
 
 ## WIP
 

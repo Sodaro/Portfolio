@@ -1,14 +1,10 @@
 <script>
-    import Button from "$lib/components/Button.svelte";
     import SectionComponent from "$lib/components/SectionComponent.svelte";
 </script>
 
 <svelte:head>
 <title>DavidB | Pumpkin Boy</title>
 </svelte:head>
-
-<Button href="/">
-</Button>
 
 <SectionComponent>
 

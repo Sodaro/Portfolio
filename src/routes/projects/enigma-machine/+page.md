@@ -5,7 +5,6 @@
     import RotorEncryption from "$lib/snippets/rotorencryption.md";
     import EnigmaEncryption from "$lib/snippets/enigmaencryption.md";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
-    import Button from "$lib/components/Button.svelte";
     import SectionComponent from "$lib/components/SectionComponent.svelte";
 </script>
 
@@ -13,12 +12,13 @@
 <title>DavidB | Enigma Machine</title>
 </svelte:head>
 
-<Button href="/">
-</Button>
-
 <SectionComponent>
 
 # Enigma Machine Project
+
+<ButtonLink href="https://github.com/Sodaro/Unreal-ProjectEnigma" isGithubLink=true>
+    EnigmaMachine Repo
+</ButtonLink>
 
 ## Background
 I got the inspiration to make an Enigma Machine after seeing the movie "The Imitation Game" and watching a few Computerphile youtube-videos that talked about how the machine worked and how it was cracked. My goal with the project was to make a machine that had rotors you could manually rotate and swap out for different configs and to have a working lampboard that shows the encrypted letter. I did not look at any existing algorithms, instead, I limited myself to the following resources:

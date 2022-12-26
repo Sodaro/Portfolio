@@ -12,8 +12,6 @@
 <title>DavidB | AddOns</title>
 </svelte:head>
 
-<!-- <Button href="/">
-</Button> -->
 <SectionComponent>
 
 # WoW Addons
@@ -31,6 +29,11 @@ By having small and focused addons that only rely on the base API, it is a lot e
 
 
 ### SodaChatFilter
+
+<ButtonLink isGithubLink=true href="https://github.com/SodaAddons/WOTLK-SodaChatFilter">
+    ChatFilter Repo
+</ButtonLink>
+
 
 #### Background
 When I started playing classic wow (the re-release of the game without expansions) I soon found the LFG chat, used for finding groups, to contain too many messages that weren't relevant to me. I saw that the API contained functionality that allows you to easily parse messages that you receive and decide whether to show or hide them. 
@@ -63,6 +66,10 @@ Code:
 
 ### SodaBarHider
 
+<ButtonLink isGithubLink=true href="https://github.com/SodaAddons/WOTLK-SodaBarHider">
+    BarHider Repo
+</ButtonLink>
+
 **Feature to implement:** I wanted a way to hide actionbars outside of combat, as when they were full they were occupying a large amount of space on the screen, but I also wanted to be able to use them when needed.
 
 
@@ -82,7 +89,5 @@ Code:
 
 
 
-<ButtonLink href="https://github.com/orgs/SodaAddons/repositories">
-    AddOn Github
-</ButtonLink>
+
 </SectionComponent>
