@@ -18,7 +18,7 @@
     <Badge>Lua</Badge>
     <Badge>Unreal Engine</Badge>
     <Badge>Unity</Badge>
-    <Badge>Löve2D</Badge>
+    <Badge>LÖVE framework</Badge>
   </div>
   <div class="avatar md:col-start-4 not-prose w-fit h-fit">
     <img src="/profilepic2.jpg" alt="dave" class="w-80 h-80 max-w-xs max-h-xs border-8 rounded-xl"/>

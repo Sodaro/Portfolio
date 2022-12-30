@@ -1,8 +1,10 @@
 <script>
     export let size="text-xl"
     export let padding="p-4"
+    export let hasFill="true"
+    export let color="badge-primary"
 </script>
 
-<div class="badge badge-primary {size} {padding}">
+<div class="badge {color} {hasFill === "true" ? "" : "badge-outline"} {size} {padding}">
     <slot/>
 </div>

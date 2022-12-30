@@ -3,8 +3,7 @@
     import Collapse from "$lib/components/Collapse.svelte";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
     import SectionComponent from "$lib/components/SectionComponent.svelte"
-    import SCF_Filtering from "$lib/snippets/chatfilter_filtering.md"
-    import SCF_Commands from "$lib/snippets/chatfilter_commands.md"
+    import SCF_Code from "$lib/snippets/chatfilter.md"
     import SBH_BarHider from "$lib/snippets/barhider.md"
 </script>
 
@@ -16,12 +15,10 @@
 
 # WoW Addons
 
-## What is an AddOn and why make them?
-An AddOn (capitalization varies but the meaning is the same) is a modification (or mod) to the game World of Warcraft. Addons are written in Lua and use the game API to change the UI, execute logic when events happen, etc.  
+## Background
+AddOns are runtime lua scripts which use the API by the game developers to modify the game. 
 
-Aside from finding addon development fun, the main reason I make addons is that when I try to find addons that solve a problem I have; they often tend to be very cumbersome, locked in suites (big addons with multiple modules/dependencies), or have functionality that overrides base game interfaces, etc. My approach when making addons is to make tools with singular specific purposes.
-
-By having small and focused addons that only rely on the base API, it is a lot easier for any user to use whatever addons they want as there will be a lot fewer conflicts and it is easy to disable/remove them without losing any other functionality.  
+My addons are small and focused, with the goal of solving one "problem" per addon. This lets me easily use them in combination with other addons without having conflicts.
 
 ![Part of my World of Warcraft AddOn list ](/projectmedia/addons/addon_list.jpg "Part of my current AddOn list")
 
@@ -35,28 +32,17 @@ By having small and focused addons that only rely on the base API, it is a lot e
 </ButtonLink>
 
 
-#### Background
-When I started playing classic wow (the re-release of the game without expansions) I soon found the LFG chat, used for finding groups, to contain too many messages that weren't relevant to me. I saw that the API contained functionality that allows you to easily parse messages that you receive and decide whether to show or hide them. 
+**Problem:**
+When I started playing classic wow (the re-release of the game without expansions) I found the group finding chat to be too filled with irrelevant messages.
 
-
-#### How it works
-Using the parsing functionality and "SlashCommands" (which is logic the user can call by typing "/functionname" in chat) I can in-game type "/scf add boost" which would filter out any messages that contain the word "boost".
-
-Command usage: "/scf operation dataparam1 dataparam2 ..."
-
+**Solution:**
+I checked the API and found features that allows you to parse received messages and the ability to hide certain messages. Using the chat-parsing functionality and "SlashCommands" (which is logic the user can call by typing "/functionname" in chat) I implemented a way so the user can filter out messages while playing, by typing "/scf add wordtofilter anotherwordtofilter" or "/scf add sentence_of_words_to_filter".
 
 The message is split on whitespace to get all the parameters provided after "/scf". The first parameter is the operation, and the rest is data. My way of still being able to have both a way to filter out sentences, and a way to quickly add multiple words, is to have sentences require '_' to combine them. This way typing "/scf add hello world" would filter out any messages containing either "hello" or "world", whereas typing "/scf add hello_world" would only filter out messages containing the sequence "hello world".
 
+<Collapse title="Chatfilter Code">
 
-Code:
-<Collapse title="Filter Commands Parsing">
-
-    <SCF_Commands />
-</Collapse>
-
-<Collapse title="Filtering Behavior">
-
-    <SCF_Filtering />
+    <SCF_Code />
 </Collapse>
 
 
@@ -70,16 +56,14 @@ Code:
     BarHider Repo
 </ButtonLink>
 
-**Feature to implement:** I wanted a way to hide actionbars outside of combat, as when they were full they were occupying a large amount of space on the screen, but I also wanted to be able to use them when needed.
+**Problem:** I wanted a way to hide actionbars outside of combat, as when they were full they were occupying a large amount of space on the screen, but I also wanted to be able to use them when needed.
 
 
-**Problem:** My first attempt was to create a frame on top of the actionbars that I wanted to show/hide and to handle the logic in OnMouseEnter / OnMouseLeave. The problem with this approach was that when I showed the hidden actionbars they would have higher priority which would cause the OnMouseLeave on the created frame to fire, which lead to flickering behavior. Another problem was that the hidden frame was blocking the slots on the actionbar if it had a higher priority, and wouldn't register mouse movement if it had a lower priority.
+**Solution:** My first attempt was to create a frame on top of the actionbars that I wanted to show/hide and to handle the logic in OnMouseEnter / OnMouseLeave. The problem with this approach was that when I showed the hidden actionbars they would have higher priority which would cause the OnMouseLeave on the created frame to fire, which lead to flickering behavior. Another problem was that the hidden frame was blocking the slots on the actionbar if it had a higher priority, and wouldn't register mouse movement if it had a lower priority.
 
+The resulting solution I came up with at the time was to have an additional larger outer frame and a smaller inner frame, when the mouse enters the inner frame the actionbars are shown, and when the mouse enters the outer frame they are hidden.
 
-
-**Solution:** The solution I came up with at the time was to have an additional larger outer frame and a smaller inner frame, when the mouse enters the inner frame the actionbars are shown, and when the mouse enters the outer frame they are hidden.
-
-<Collapse title="Bar Hiding Behavior">
+<Collapse title="Bar Hiding Code">
     <SBH_BarHider />
 </Collapse>
 
