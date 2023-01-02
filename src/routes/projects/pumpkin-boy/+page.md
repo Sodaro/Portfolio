@@ -1,5 +1,6 @@
 <script>
     import SectionComponent from "$lib/components/SectionComponent.svelte";
+    import Team from "$lib/components/Team.svelte";
 </script>
 
 <svelte:head>
@@ -10,8 +11,19 @@
 
 # Pumpkin boy
 
+Development Time: 2 weeks<br/>
+Team size: 8<br/>
+Engine: Unity<br/>
+Language: C#<br/>
+Main Contributions: Player movement, head throwing (Projectile Motion) with preview line, and box pushing.
+
 ## About
-Pumpkin Boy is a puzzle game where you play as a child that has been cursed by a witch, turning their head into a detachable pumpkin head. The character must throw their head to places the body can’t reach, and move boxes around to weigh down pressure plates in order to escape a witch’s dungeon. The game is a single-player game where the body and head are controlled by left-, and right-stick respectively.
+Pumpkin Boy is a puzzle game where you play as a child that has been cursed by a witch, turning their head into a detachable pumpkin head. The character must throw their head to places the body can’t reach, and move boxes around to weigh down buttons in order to escape a witch’s dungeon. The game is a single-player game where the body and head are controlled by left-, and right-stick respectively.
+
+## Project Info
+For this project we only had 2 weeks total of development time, including planning and displaying the game at the Museum of Technology in Stockholm. The game was going to be played by kids of different ages so we developed the game with that in mind.
+
+We were 8 people in total working on the game: 3 designers, 3 programmers, and 2 artists (links listed in Team section at the bottom.) Jason worked on the event system used in all the puzzles, Ruta worked on a tweening system and shaders, and I worked on the player mechanics (movement, head throwing, and box pushing).   
 
 ## Implementation
 
@@ -34,5 +46,9 @@ We wanted to have boxes that could be pushed or pulled around, and that should p
 The solution I used, in the end, was to lock the player movement, turn off gravity and make the box kinematic, and then move the box based on the character movement and the initial offset the box had to the player when it was grabbed. To prevent the player from placing the box inside walls I checked for box collisions from the character using the size of the box and the velocity of the player, and if the box “would overlap something” I set the velocity of the player to zero.
 
 ![FStack view of the hide/show bar frames](/projectmedia/pumpkin/box_push.png "Displaying the two frames used for hiding/showing the right actionbar.")
+
+## Team
+
+<Team developers={{programmers:["David Bång", "Ruta Sapokaite", "Jason Sandelin Francis"], designers:["Joshua Ásberg", "Set Engberg", "Dani Vitelli"], artists:["Sandra Pärnaste", "Wiktor Kaluba"]}} />
 
 </SectionComponent>

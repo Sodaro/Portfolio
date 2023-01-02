@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-<title>DavidB | Bomberbots</title>
+<title>Bomberbots | David Bång</title>
 </svelte:head>
 
 <SectionComponent>

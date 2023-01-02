@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-<title>DavidB | AddOns</title>
+<title>WoW Addons | David Bång</title>
 </svelte:head>
 
 <SectionComponent>

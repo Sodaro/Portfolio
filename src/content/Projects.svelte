@@ -11,6 +11,7 @@
     alt="Video showing 'Hello World' be encrypted on an EnigmaMachine"
     title="Bömberbots"
     descr="Bomberman clone made with Tomas Wallin"
+    groupSize="Group"
     badges={["Lua", "LÖVE framework"]}
   />
 
@@ -20,29 +21,36 @@
       alt="Video showing 'Hello World' be encrypted on an EnigmaMachine"
       title="Enigma Machine"
       descr="An interactible Enigma Machine simulator"
-      badges={["C++", "Unreal Engine"]}
+      groupSize="Solo"
+      badges={["C++", "Unreal Engine", "Simulation"]}
     />
     <ProjectCard
     dir="/projects/addons"
     posterSrc="/projectmedia/addons/hideshowbars3.jpg"
     alt="a screenshot from World of Warcraft showing 4 green rectangles in debug view"
     title="WoW Addons"
-    descr="A selection of World of Warcraft AddOns I have made over the years."
+    descr="A selection of World of Warcraft AddOns I have made over the years"
+    groupSize="Solo"
+    badges={["Lua", "UI", "Game Modification"]}
   />
     <ProjectCard
       dir="/projects/pumpkin-boy"
       posterSrc="/projectmedia/pumpkin/pumpkinboy.png"
       alt="The pumpkin boy character with the head and body on a switch and an open door"
       title="Pumpkin Boy"
-      descr="Thirdperson Puzzle game made in Unity."
+      descr="Thirdperson Puzzle game made in Unity"
+      groupSize="Group"
+      badges={["C#", "Unity",  "Gameplay"]}
     />
     <ProjectCard
       dir="/projects/bonkers"
       posterSrc="/projectmedia/bonkers/cover2.png"
       alt="The pumpkin boy character with the head and body on a switch and an open door"
       title="Bonkers"
-      descr="Local multiplayer arena-brawler."
+      descr="Local multiplayer arena-brawler"
+      groupSize="Group"
       objectFit="object-cover"
+      badges={["C++", "Unreal Engine", "Gameplay", "Camera"]}
     />
   </div>
 </div>

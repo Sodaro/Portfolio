@@ -4,7 +4,8 @@
 </script>
 
 <svelte:head>
-  <title>DavidB | Home</title>
+  <title>Portfolio | David Bång</title>
+  <meta name="description" content="Game programmer David Bång's portfolio website.">
 </svelte:head>
 
 <div class="flex flex-col">

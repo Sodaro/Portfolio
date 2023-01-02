@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-<title>DavidB | Enigma Machine</title>
+<title>Enigma Machine | David Bång</title>
 </svelte:head>
 
 <SectionComponent>

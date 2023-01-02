@@ -8,6 +8,7 @@
   export let alt = "ProjectCard Alt Text Here";
   export let title = "";
   export let descr = "";
+  export let groupSize = "";
   export let posterSrc = "";
   export let objectFit = "object-cover";
   export let badges = [];
@@ -28,15 +29,18 @@
       {/if}
     </figure>
     <div class="w-full py-2 px-8">
-      <h4 class="text-primary-content prose prose-xl font-bold">{title}</h4>
-      <div class="flex flex-wrap gap-2">
-      {#each badges as badge}
-      <div class="badge badge-accent text-xl p-4">
-      {badge}  
-      </div>
-      {/each}
-      </div>
-      <p class="text-primary-content prose prose-xl py-2">{descr}</p>
+
+        <p class="text-primary-content italic prose prose-xl">{groupSize} Project</p>
+        <h4 class="text-primary-content prose prose-2xl pt-2 pb-0 leading-tight font-bold">{title}</h4>
+
+      <p class="text-primary-content prose prose-xl pb-2">{descr}</p>
+      <div class="flex flex-wrap gap-2 py-2">
+        {#each badges as badge}
+        <div class="badge badge-accent text-xl p-4">
+        {badge}  
+        </div>
+        {/each}
+        </div>
     </div>
   </div>
 </a>
