@@ -26,10 +26,28 @@ const config = {
     themes: [
       {
         light: {
-          ...require("daisyui/src/colors/themes")["[data-theme=autumn]"]
-        },
+          
+          "primary": "#8C0327",
+                   
+          "secondary": "#D75050",
+                   
+          "accent": "#c49B6C",
+                   
+          "neutral": "#831843",
+                   
+          "base-100": "#F2F2F2",
+                   
+          "info": "#42AEBD",
+                   
+          "success": "#489380",
+                   
+          "warning": "#EB8014",
+                   
+          "error": "#E01A2E",
+                   },
         dark: {
-          ...require("daisyui/src/colors/themes")["[data-theme=luxury]"]
+          ...require("daisyui/src/colors/themes")["[data-theme=luxury]"],
+          'base-100': "#1E1E24"
         }
       },
     ],

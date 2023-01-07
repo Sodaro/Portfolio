@@ -4,13 +4,13 @@
     export let isDownloadButton=false;
 </script>
 
-<a href={href} target="_blank" class="link btn btn-primary text-primary-content font-bold py-2 px-4 rounded col-span-2 normal-case no-underline text-lg" rel="noopener noreferrer">
-    <div class="flex gap-x-4 text-center items-center">
+<a href={href} target="_blank" class="not-prose btn btn-accent font-bold rounded normal-case no-underline text-lg" rel="noopener noreferrer">
+    <div class="flex gap-x-4 not-prose text-center items-center">
         {#if isGithubLink}
         <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentcolor"
-        class="h-8 w-8 bi bi-github text-primary-content"
+        class="h-8 w-8 bi bi-github fill-accent-content"
         viewBox="0 0 16 16"
       >
       <path
@@ -18,13 +18,17 @@
         />
     </svg>
         {/if}
-    <slot/>
+    
     {#if isDownloadButton}
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" class="w-4 h-4">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
       </svg>       
-    {:else}
-    <svg xmlns="http://www.w3.org/2000/svg" stroke="currentcolor" class="h-4 w-4" viewBox="0 0 512 512"><path d="M384 320c-17.67 0-32 14.33-32 32v96H64V160h96c17.67 0 32-14.32 32-32s-14.33-32-32-32L64 96c-35.35 0-64 28.65-64 64V448c0 35.34 28.65 64 64 64h288c35.35 0 64-28.66 64-64v-96C416 334.3 401.7 320 384 320zM488 0H352c-12.94 0-24.62 7.797-29.56 19.75c-4.969 11.97-2.219 25.72 6.938 34.88L370.8 96L169.4 297.4c-12.5 12.5-12.5 32.75 0 45.25C175.6 348.9 183.8 352 192 352s16.38-3.125 22.62-9.375L416 141.3l41.38 41.38c9.156 9.141 22.88 11.84 34.88 6.938C504.2 184.6 512 172.9 512 160V24C512 10.74 501.3 0 488 0z"/></svg>
+    {/if}
+    <p class="text-accent-content">
+    <slot/>
+    </p>
+    {#if isDownloadButton == false}
+    <svg xmlns="http://www.w3.org/2000/svg" stroke="currentcolor" class="h-4 w-4 fill-accent-content" viewBox="0 0 512 512"><path d="M384 320c-17.67 0-32 14.33-32 32v96H64V160h96c17.67 0 32-14.32 32-32s-14.33-32-32-32L64 96c-35.35 0-64 28.65-64 64V448c0 35.34 28.65 64 64 64h288c35.35 0 64-28.66 64-64v-96C416 334.3 401.7 320 384 320zM488 0H352c-12.94 0-24.62 7.797-29.56 19.75c-4.969 11.97-2.219 25.72 6.938 34.88L370.8 96L169.4 297.4c-12.5 12.5-12.5 32.75 0 45.25C175.6 348.9 183.8 352 192 352s16.38-3.125 22.62-9.375L416 141.3l41.38 41.38c9.156 9.141 22.88 11.84 34.88 6.938C504.2 184.6 512 172.9 512 160V24C512 10.74 501.3 0 488 0z"/></svg>
     {/if}    
 </div>
 </a>

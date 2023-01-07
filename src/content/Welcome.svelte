@@ -21,7 +21,7 @@
     <Badge>LÖVE framework</Badge>
   </div>
   <div class="avatar md:col-start-4 not-prose w-fit h-fit">
-    <img src="/profilepic2.jpg" alt="dave" class="w-80 h-80 max-w-xs max-h-xs border-8 rounded-xl"/>
+    <img src="/profilepic2.jpg" alt="david" class="w-80 h-80 border-base-300  max-w-xs max-h-xs border-8 rounded-xl"/>
   </div>
 </div>
 
