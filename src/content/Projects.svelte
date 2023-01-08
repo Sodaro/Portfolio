@@ -42,7 +42,7 @@
       groupSize="Group"
       badges={["C#", "Unity",  "Gameplay"]}
     />
-    <ProjectCard
+    <!-- <ProjectCard
       dir="/projects/bonkers"
       posterSrc="/projectmedia/bonkers/cover2.png"
       alt="The pumpkin boy character with the head and body on a switch and an open door"
@@ -51,6 +51,6 @@
       groupSize="Group"
       objectFit="object-cover"
       badges={["C++", "Unreal Engine", "Gameplay", "Camera"]}
-    />
+    /> -->
   </div>
 </div>

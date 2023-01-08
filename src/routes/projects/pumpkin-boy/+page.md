@@ -1,6 +1,7 @@
 <script>
     import SectionComponent from "$lib/components/SectionComponent.svelte";
     import Team from "$lib/components/Team.svelte";
+    import Hero from "$lib/components/Hero.svelte";
 </script>
 
 <svelte:head>
@@ -11,19 +12,14 @@
 
 # Pumpkin boy
 
-Development Time: 2 weeks<br/>
-Team size: 8<br/>
-Engine: Unity<br/>
-Language: C#<br/>
-Main Contributions: Player movement, head throwing (Projectile Motion) with preview line, and box pushing.
+<Hero devTime="2 weeks" teamSize="8" engine="Unity" language="C#" summary="Player movement, head throwing (Projectile Motion), and box pushing"/>
 
 ## About
 Pumpkin Boy is a puzzle game where you play as a child that has been cursed by a witch, turning their head into a detachable pumpkin head. The character must throw their head to places the body can’t reach, and move boxes around to weigh down buttons in order to escape a witch’s dungeon. The game is a single-player game where the body and head are controlled by left-, and right-stick respectively.
 
-## Project Info
 For this project we only had 2 weeks total of development time, including planning and displaying the game at the Museum of Technology in Stockholm. The game was going to be played by kids of different ages so we developed the game with that in mind.
 
-We were 8 people in total working on the game: 3 designers, 3 programmers, and 2 artists (links listed in Team section at the bottom.) Jason worked on the event system used in all the puzzles, Ruta worked on a tweening system and shaders, and I worked on the player mechanics (movement, head throwing, and box pushing).   
+We were 8 people in total working on the game: 3 designers, 3 programmers, and 2 artists (listed in Team section at the bottom.) Jason worked on the event system used in all the puzzles, Ruta worked on a tweening system and shaders, and I worked on the player mechanics.
 
 ## Implementation
 

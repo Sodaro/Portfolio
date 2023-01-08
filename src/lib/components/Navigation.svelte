@@ -26,7 +26,7 @@
   }
 </script>
 
-<nav class="top-0 left-0 lg:top-16 sticky h-full z-50 bg-base-100 not-prose">
+<nav class="top-0 left-0 lg:top-16 sticky h-full w-1/5 z-50 bg-base-100 not-prose">
   <div class="navbar lg:hidden w-full flex justify-between">
     <div id="burgermenu" class="dropdown">
       <label tabindex="-1" class="btn btn-ghost" for="burgermenu">

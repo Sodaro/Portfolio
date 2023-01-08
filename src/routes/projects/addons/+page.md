@@ -16,7 +16,8 @@
 # WoW Addons
 
 ## Background
-AddOns are runtime lua scripts which use the API by the game developers to modify the game. 
+
+AddOns are runtime Lua scripts which use the API by the game developers to modify the game. 
 
 My addons are small and focused, with the goal of solving one "problem" per addon. This lets me easily use them in combination with other addons without having conflicts.
 

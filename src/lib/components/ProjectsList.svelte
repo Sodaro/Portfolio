@@ -3,58 +3,39 @@
 </script>
 
 <h2 class="font-bold">Projects</h2>
-<ul class="menu">
-    <li>
+<ul class="menu gap-4 normal-case">
+    <li class="btn btn-outline rounded">
         <a href="/projects/addons">
-            <div class="flex flex-col">
+            <div class="normal-case">
                 WoW addons
-                <!-- <div class="flex flex-row gap-2 pt-2">
-                    <Badge padding="p-2" size="text-l">Lua</Badge>
-                </div> -->
             </div>
         </a>
     </li>
-    <li>
-        <a href="/projects/enigma-machine" class="">
-            <div class="flex flex-col ">
+    <li class="btn btn-outline rounded">
+        <a href="/projects/enigma-machine">
+            <div class="normal-case">
                 Enigma Machine
-                <!-- <div class="flex flex-row gap-2 pt-2">
-                    <Badge padding="p-2" size="text-l">C++</Badge>
-                    <Badge padding="p-2" size="text-l">Unreal Engine</Badge>
-                </div> -->
             </div>
         </a>
     </li>
-    <li>
-        <a href="/projects/bonkers" class="">
+    <!-- <li>
+        <a href="/projects/bonkers">
             <div class="flex flex-col ">
                 Bonkers
-                <!-- <div class="flex flex-row gap-2 pt-2">
-                    <Badge padding="p-2" size="text-l">C++</Badge>
-                    <Badge padding="p-2" size="text-l">Unreal Engine</Badge>
-                </div> -->
+            </div>
+        </a>
+    </li> -->
+    <li class="btn btn-outline rounded">
+        <a href="/projects/bomberbots">
+            <div class="normal-case">
+                Bömberbots
             </div>
         </a>
     </li>
-    <li>
-        <a href="/projects/bomberbots" class="">
-            <div class="flex flex-col ">
-                Bomberbots
-                <!-- <div class="flex flex-row gap-2 pt-2">
-                    <Badge padding="p-2" size="text-l">Lua</Badge>
-                    <Badge padding="p-2" size="text-l">LÖVE framework</Badge>
-                </div> -->
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="/projects/pumpkinboy" class="">
-            <div class="flex flex-col ">
+    <li class="btn btn-outline rounded">
+        <a href="/projects/pumpkin-boy">
+            <div class="normal-case">
                 Pumpkin Boy
-                <!-- <div class="flex flex-row gap-2 pt-2">
-                    <Badge padding="p-2" size="text-l">C#</Badge>
-                    <Badge padding="p-2" size="text-l">Unity</Badge>
-                </div> -->
             </div>
         </a>
     </li>

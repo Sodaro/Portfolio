@@ -6,6 +6,7 @@
     import EnigmaEncryption from "$lib/snippets/enigmaencryption.md";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
     import SectionComponent from "$lib/components/SectionComponent.svelte";
+    import Hero from "$lib/components/Hero.svelte";
 </script>
 
 <svelte:head>
@@ -16,6 +17,9 @@
 
 # Enigma Machine Project
 
+<Hero devTime="1 month" teamSize="1" engine="Unreal Engine 4" language="C++" summary="Player movement, head throwing (Projectile Motion) with preview line, and box pushing"/>
+
+<br>
 <ButtonLink href="https://github.com/Sodaro/Unreal-ProjectEnigma" isGithubLink=true>
     EnigmaMachine Repo
 </ButtonLink>
