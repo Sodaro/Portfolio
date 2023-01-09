@@ -19,7 +19,7 @@
 
 AddOns are runtime Lua scripts which use the API by the game developers to modify the game. 
 
-My addons are small and focused, with the goal of solving one "problem" per addon. This lets me easily use them in combination with other addons without having conflicts.
+I try to write focused addons, with the goal of solving one "problem" per addon. This lets me easily use them in combination with other addons without having conflicts.
 
 ![Part of my World of Warcraft AddOn list ](/projectmedia/addons/addon_list.jpg "Part of my current AddOn list")
 
@@ -37,7 +37,7 @@ My addons are small and focused, with the goal of solving one "problem" per addo
 When I started playing classic wow (the re-release of the game without expansions) I found the group finding chat to be too filled with irrelevant messages.
 
 **Solution:**
-I checked the API and found features that allows you to parse received messages and the ability to hide certain messages. Using the chat-parsing functionality and "SlashCommands" (which is logic the user can call by typing "/functionname" in chat) I implemented a way so the user can filter out messages while playing, by typing "/scf add wordtofilter anotherwordtofilter" or "/scf add sentence_of_words_to_filter".
+I checked the API and found features that allows you to parse received messages and the ability to hide certain messages. Using the chat-parsing functionality and "SlashCommands" (which is logic the user can call by typing "/functionname" in chat) I implemented a way, so the user can filter out messages while playing by typing "/scf add wordtofilter anotherwordtofilter" or "/scf add sentence_of_words_to_filter".
 
 The message is split on whitespace to get all the parameters provided after "/scf". The first parameter is the operation, and the rest is data. My way of still being able to have both a way to filter out sentences, and a way to quickly add multiple words, is to have sentences require '_' to combine them. This way typing "/scf add hello world" would filter out any messages containing either "hello" or "world", whereas typing "/scf add hello_world" would only filter out messages containing the sequence "hello world".
 
