@@ -14,7 +14,9 @@
   }
 </script>
 
-<nav class="top-0 left-0 2xl:top-16 sticky lg:w-1/5 z-50 bg-base-100 not-prose">
+<nav
+  class="top-0 left-0 h-fit 2xl:top-16 sticky lg:w-1/5 z-50 bg-base-100 not-prose"
+>
   <div class="navbar lg:hidden w-full flex justify-between">
     <div id="burgermenu" class="dropdown">
       <label tabindex="-1" class="btn btn-ghost" for="burgermenu">
@@ -34,7 +36,7 @@
       </label>
       <ul
         tabindex="-1"
-        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 w-52"
+        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 w-52 md:w-64"
       >
         <ProjectsList />
       </ul>

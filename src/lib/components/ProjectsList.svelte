@@ -4,7 +4,7 @@
     </a>
 </div>
 <h2 class="font-bold">Featured Projects</h2>
-<ul class="menu gap-0 xl:gap-4 normal-case">
+<ul class="menu gap-4 lg:gap-0 xl:gap-4 normal-case">
     <li>
         <a href="/pages/bomberbots" class="btn btn-outline rounded">
             <div class="normal-case">Bömberbots</div>
