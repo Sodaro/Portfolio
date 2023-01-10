@@ -1,7 +1,7 @@
 <script>
     import SectionComponent from "$lib/components/SectionComponent.svelte";
     import Team from "$lib/components/Team.svelte";
-    import Hero from "$lib/components/Hero.svelte";
+    import Summary from "$lib/components/Summary.svelte";
     import TextLink from "$lib/components/TextLink.svelte";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
     import MDVideo from "$lib/components/MDVideo.svelte";
@@ -15,7 +15,7 @@
 
 # Pumpkin boy
 
-<Hero devTime="2 weeks" teamSize="8" engine="Unity" language="C#" summary="Player movement, head throwing (Projectile Motion), and box pushing"/>
+<Summary devTime="2 weeks" teamSize="8" engine="Unity" language="C#" summary="Player movement, head throwing (Projectile Motion), and box pushing"/>
 
 <br>
 <ButtonLink href="https://github.com/Sodaro/PumpkinBoy" isGithubLink=true>

@@ -6,7 +6,7 @@
     import EnigmaEncryption from "$lib/snippets/enigmaencryption.md";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
     import SectionComponent from "$lib/components/SectionComponent.svelte";
-    import Hero from "$lib/components/Hero.svelte";
+    import Summary from "$lib/components/Summary.svelte";
     import TextLink from "$lib/components/TextLink.svelte";
 </script>
 
@@ -18,7 +18,7 @@
 
 # Enigma Machine Project
 
-<Hero devTime="1 month" teamSize="1" engine="Unreal Engine 4" language="C++" summary="Player movement, head throwing (Projectile Motion) with preview line, and box pushing"/>
+<Summary devTime="1 month" teamSize="1" engine="Unreal Engine 4" language="C++" summary="Player movement, head throwing (Projectile Motion) with preview line, and box pushing"/>
 
 <br>
 <ButtonLink href="https://github.com/Sodaro/Unreal-ProjectEnigma" isGithubLink=true>
