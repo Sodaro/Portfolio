@@ -6,7 +6,7 @@
   {href}
   target="_blank"
   rel="noopener noreferrer"
-  class="not-prose link link-primary"
+  class="not-prose link text-base-content"
 >
   <p class="link text-base-content inline">
     <slot />

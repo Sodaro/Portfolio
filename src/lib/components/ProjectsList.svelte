@@ -1,27 +1,39 @@
-<div class="w-full">
-    <a href="/pages/about" class="btn btn-outline rounded w-full">
+<div class="w-full py-4">
+    <a href="/pages/about" class="btn btn-outline rounded w-full" role="button">
         <div class="normal-case">About</div>
     </a>
 </div>
 <h2 class="font-bold">Featured Projects</h2>
-<ul class="menu gap-4 lg:gap-0 xl:gap-4 normal-case">
+<ul class="menu gap-4 normal-case">
     <li>
-        <a href="/pages/bomberbots" class="btn btn-outline rounded">
+        <a
+            href="/pages/bomberbots"
+            class="btn btn-md btn-outline rounded"
+            role="button"
+        >
             <div class="normal-case">Bömberbots</div>
         </a>
     </li>
     <li>
-        <a href="/pages/enigma-machine" class="btn btn-outline rounded">
-            <div class="normal-case">Enigma Machine</div>
+        <a
+            href="/pages/enigma-machine"
+            class="btn btn-outline rounded"
+            role="button"
+        >
+            <div class="normal-case h-full">Enigma Machine</div>
         </a>
     </li>
     <li>
-        <a href="/pages/addons" class="btn btn-outline rounded">
+        <a href="/pages/addons" class="btn btn-outline rounded" role="button">
             <div class="normal-case">WoW addons</div>
         </a>
     </li>
     <li>
-        <a href="/pages/pumpkin-boy" class="btn btn-outline rounded">
+        <a
+            href="/pages/pumpkin-boy"
+            class="btn btn-outline rounded"
+            role="button"
+        >
             <div class="normal-case">Pumpkin Boy</div>
         </a>
     </li>
