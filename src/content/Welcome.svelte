@@ -3,7 +3,7 @@
   import ButtonLink from "$lib/components/ButtonLink.svelte";
 </script>
 
-<div id="welcomegrid" class="md:grid md:grid-cols-4">
+<div id="welcomegrid" class="md:grid gap-x-4 2xl:grid-cols-4">
   <div id="welcometext" class="col-start-1 md:col-end-3">
     <h1 id="welcome" class="mb-0">Hi, I'm David Bång!</h1>
     <p class="">
@@ -30,11 +30,11 @@
   </div>
 </div>
 
-<div class="flex flex-col pt-4">
-  <div class="flex">
+<div class="flex flex-col pt-4 pb-0 h-fit">
+  <div class="flex h-fit">
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="h-10 w-10 self-center"
+      class="h-10 w-10 self-center inline"
       viewBox="0 0 20 20"
       fill="currentColor"
     >
@@ -44,6 +44,6 @@
         clipRule="evenodd"
       />
     </svg>
-    <p class="bottom-0">Stockholm, Sweden</p>
+    <p class="">Stockholm, Sweden</p>
   </div>
 </div>

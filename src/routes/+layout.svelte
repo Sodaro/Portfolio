@@ -62,11 +62,11 @@
   </script>
 </svelte:head>
 
-<div class="w-screen p-8 lg:py-16 lg:flex lg:flex-row">
+<div class="w-full h-full p-8 pt-2 xl:pt-2 2xl:py-16 lg:flex lg:flex-row">
   <Navigation />
-  <div class="divider divider-horizontal" />
+  <div class="hidden lg:flex divider divider-horizontal" />
   <div
-    class="min-h-screen mx-auto prose prose-lg lg:w-9/12  xl:prose-2xl max-w-none dark:text-neutral-content mycontainer"
+    class="min-h-screen mx-auto prose prose-lg lg:w-9/12  xl:prose-2xl max-w-none dark:text-neutral-content"
   >
     <slot />
   </div>

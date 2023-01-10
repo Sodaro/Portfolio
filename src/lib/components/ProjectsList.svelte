@@ -3,11 +3,11 @@
         <div class="normal-case">About</div>
     </a>
 </div>
-<h2 class="font-bold">Projects</h2>
+<h2 class="font-bold">Featured Projects</h2>
 <ul class="menu gap-4 normal-case">
     <li>
-        <a href="/pages/addons" class="btn btn-outline rounded">
-            <div class="normal-case">WoW addons</div>
+        <a href="/pages/bomberbots" class="btn btn-outline rounded">
+            <div class="normal-case">Bömberbots</div>
         </a>
     </li>
     <li>
@@ -15,16 +15,9 @@
             <div class="normal-case">Enigma Machine</div>
         </a>
     </li>
-    <!-- <li>
-        <a href="/pages/bonkers">
-            <div class="flex flex-col ">
-                Bonkers
-            </div>
-        </a>
-    </li> -->
     <li>
-        <a href="/pages/bomberbots" class="btn btn-outline rounded">
-            <div class="normal-case">Bömberbots</div>
+        <a href="/pages/addons" class="btn btn-outline rounded">
+            <div class="normal-case">WoW addons</div>
         </a>
     </li>
     <li>
