@@ -14,9 +14,7 @@
   }
 </script>
 
-<nav
-  class="top-0 left-0 2xl:top-16 sticky h-fit lg:w-1/5 z-50 bg-base-100 not-prose"
->
+<nav class="top-0 left-0 2xl:top-16 sticky lg:w-1/5 z-50 bg-base-100 not-prose">
   <div class="navbar lg:hidden w-full flex justify-between">
     <div id="burgermenu" class="dropdown">
       <label tabindex="-1" class="btn btn-ghost" for="burgermenu">
@@ -75,7 +73,9 @@
       >
     </label>
   </div>
-  <div class="hidden lg:flex lg:flex-col min-h-screen lg:gap-4 lg:text-xl">
+  <div
+    class="hidden h-screen lg:flex lg:flex-col min-h-screen gap-2 xl:gap-4 lg:text-xl"
+  >
     <div class="item italic hover:bg-base-200">
       <a href="/" class="flex flex-col">
         <p class="text-2xl 2xl:text-5xl font-bold">David Bång</p>
@@ -139,10 +139,10 @@
         </svg>
       </a>
     </div>
-    <div class="divider px-4" />
+    <div class="hidden xl:block divider px-4" />
 
     <ProjectsList />
-    <div class="2xl:divider px-4" />
+    <div class="hidden xl:block divider px-4" />
     <label class="btn btn-outline w-full swap swap-rotate p-0 self-center">
       <div class="col-start-1 p-4">Toggle<br />theme</div>
       <input

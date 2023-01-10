@@ -29,7 +29,7 @@
 I got the inspiration to make an Enigma Machine after seeing the movie "The Imitation Game" and watching a few Computerphile youtube-videos that talked about how the machine worked and how the code was cracked. My goal with the project was to make a machine that had rotors you could manually rotate and swap out for different configs and to have a working lampboard that shows the encrypted letter. 
 
 ### Resources
-I did not want to look at any existing algorithms, as I wanted to try and figure out how the machine works internally. As such I limited myself to the following resources, as well as looking up images of disassembled machines.
+I did not want to look at any existing algorithms, as I wanted to try and figure out how the machine works internally. As such I limited myself to only looking up images of disassembled machines, as well as the following resources:
 
 <ButtonLink href="https://www.101computing.net/enigma-machine-emulator/">
     Emulator
