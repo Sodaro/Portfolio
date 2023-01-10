@@ -7,6 +7,7 @@
     import ButtonLink from "$lib/components/ButtonLink.svelte";
     import SectionComponent from "$lib/components/SectionComponent.svelte";
     import Hero from "$lib/components/Hero.svelte";
+    import TextLink from "$lib/components/TextLink.svelte";
 </script>
 
 <svelte:head>
@@ -25,7 +26,10 @@
 </ButtonLink>
 
 ## Background
-I got the inspiration to make an Enigma Machine after seeing the movie "The Imitation Game" and watching a few Computerphile youtube-videos that talked about how the machine worked and how it was cracked. My goal with the project was to make a machine that had rotors you could manually rotate and swap out for different configs and to have a working lampboard that shows the encrypted letter. I did not look at any existing algorithms, instead, I limited myself to the following resources:
+I got the inspiration to make an Enigma Machine after seeing the movie "The Imitation Game" and watching a few Computerphile youtube-videos that talked about how the machine worked and how the code was cracked. My goal with the project was to make a machine that had rotors you could manually rotate and swap out for different configs and to have a working lampboard that shows the encrypted letter. 
+
+### Resources
+I did not want to look at any existing algorithms, as I wanted to try and figure out how the machine works internally. As such I limited myself to the following resources, as well as looking up images of disassembled machines.
 
 <ButtonLink href="https://www.101computing.net/enigma-machine-emulator/">
     Emulator
@@ -38,7 +42,7 @@ I got the inspiration to make an Enigma Machine after seeing the movie "The Imit
 </ButtonLink>
 
 
-## How it works
+### How it works
 A typical machine has an input board, plugboard, lampboard, three RotorWheels, and a reflector. The rotor wheels have unique configs but they behave like rotating substitution ciphers, so RotorWheel I in position 0 might take an A as input and output it as K, whereas another wheel might output the same as X. The wheels can be placed in any of the three positions, and the initial rotation offset and ring setting (which shifts the wiring around) can also be changed.
 
 <MDVideo width="640" height="360" showControls="true" src="/projectmedia/enigmamachine_rotorwheel.mp4" alt="a video showing a breakdown of a rotor, first showing the rotor plugs and wires rotating and then showing the wiring rotating separately "/>
@@ -79,8 +83,8 @@ The first wheel rotates every time a key is pressed, and when it reaches a so-ca
 
 
 ## Implementation
-For easy access and quick access to the interactable input key objects, lamps, and plugboard ports I chose to use a hashmap with structs.
-I simulate the rotation of the wheels by incrementing an index offset, and the ring setting with a different offset which I use to change what letter gets returned by the encryption.
+For easy and quick access to the interactive input key objects, lamps, and plug-board ports; I chose to use a hash-map with custom structs.
+I simulate the rotation of the wheels by incrementing an index offset, and the ring setting with a different index offset. These offsets change which letter gets returned by the encryption.
 When a key is pressed I call EncodeLetter with the alphabet position of the letter as the parameter. 
 <Collapse title="EnigmaComponents Struct Snippet">
 

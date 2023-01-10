@@ -17,14 +17,11 @@
 
 ## Background
 
-AddOns are runtime Lua scripts which use the API by the game developers to modify the game. 
+AddOns are runtime Lua scripts which use the API provided by the developers to modify the game. 
 
 I try to write focused addons, with the goal of solving one "problem" per addon. This lets me easily use them in combination with other addons without having conflicts.
 
-![Part of my World of Warcraft AddOn list ](/projectmedia/addons/addon_list.jpg "Part of my current AddOn list")
-
 ## Highlighted Addons
-
 
 ### SodaChatFilter
 
@@ -64,9 +61,9 @@ The message is split on whitespace to get all the parameters provided after "/sc
 
 The resulting solution I came up with at the time was to have an additional larger outer frame and a smaller inner frame, when the mouse enters the inner frame the actionbars are shown, and when the mouse enters the outer frame they are hidden.
 
-<Collapse title="Bar Hiding Code">
+<!-- <Collapse title="Bar Hiding Code">
     <SBH_BarHider />
-</Collapse>
+</Collapse> -->
 
 
 

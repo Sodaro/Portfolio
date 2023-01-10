@@ -6,14 +6,14 @@
   <h2 class="">Featured Projects</h2>
   <div class="games flex flex-col w-full h-fit lg:flex-row lg:flex-wrap">
     <ProjectCard
-    dir="projects/bomberbots"
-    src="/projectmedia/bomberbots/gameplay_game3.mp4"
-    alt="Video showing 'Hello World' be encrypted on an EnigmaMachine"
-    title="Bömberbots"
-    descr="Bomberman clone made with Tomas Wallin"
-    groupSize="Group"
-    badges={["Lua", "LÖVE framework"]}
-  />
+      dir="projects/bomberbots"
+      src="/projectmedia/bomberbots/gameplay_game3.mp4"
+      alt="Video showing 'Hello World' be encrypted on an EnigmaMachine"
+      title="Bömberbots"
+      descr="Bomberman clone made with Tomas Wallin"
+      groupSize="Group"
+      badges={["Lua", "LÖVE framework"]}
+    />
 
     <ProjectCard
       dir="projects/enigma-machine"
@@ -25,14 +25,14 @@
       badges={["C++", "Unreal Engine", "Simulation"]}
     />
     <ProjectCard
-    dir="/projects/addons"
-    posterSrc="/projectmedia/addons/hideshowbars3.jpg"
-    alt="a screenshot from World of Warcraft showing 4 green rectangles in debug view"
-    title="WoW Addons"
-    descr="A selection of World of Warcraft AddOns I have made over the years"
-    groupSize="Solo"
-    badges={["Lua", "UI", "Game Modification"]}
-  />
+      dir="/projects/addons"
+      src="projectmedia/addons/shorthidebars.mp4"
+      alt="a screenshot from World of Warcraft showing 4 green rectangles in debug view"
+      title="WoW Addons"
+      descr="A selection of World of Warcraft AddOns I have made over the years"
+      groupSize="Solo"
+      badges={["Lua", "UI", "Game Modification"]}
+    />
     <ProjectCard
       dir="/projects/pumpkin-boy"
       posterSrc="/projectmedia/pumpkin/pumpkinboy.png"
@@ -40,7 +40,7 @@
       title="Pumpkin Boy"
       descr="Thirdperson Puzzle game made in Unity"
       groupSize="Group"
-      badges={["C#", "Unity",  "Gameplay"]}
+      badges={["C#", "Unity", "Gameplay"]}
     />
     <!-- <ProjectCard
       dir="/projects/bonkers"
