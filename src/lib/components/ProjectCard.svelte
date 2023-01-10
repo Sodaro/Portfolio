@@ -15,33 +15,40 @@
 </script>
 
 <div class="not-prose z-1 lg:box-border lg:w-1/2 p-2">
-<a href={dir} class="no-underline">
-  <div class="card w-full h-full shadow-2xl bg-neutral hover:bg-neutral-hover">
-    <figure class="">
-      {#if src}
-        <video class="{objectFit}" muted autoplay loop>
-          <source {src} {type} />
-          <span class="sr-only">{alt}</span>
-          Your browser does not support the video tag.
-        </video>
-      {:else}
-        <img src={posterSrc} class="{objectFit}" alt={alt} />
-      {/if}
-    </figure>
-    <div class="w-full py-2 px-8">
+  <a href={dir} class="no-underline">
+    <div
+      class="card w-full h-full shadow-2xl bg-neutral hover:bg-neutral-hover"
+    >
+      <figure class="">
+        {#if src}
+          <video class={objectFit} muted autoplay loop>
+            <source {src} {type} />
+            <span class="sr-only">{alt}</span>
+            Your browser does not support the video tag.
+          </video>
+        {:else}
+          <img src={posterSrc} class={objectFit} {alt} />
+        {/if}
+      </figure>
+      <div class="w-full py-2 px-8">
+        <p class="text-neutral-content italic prose prose-xl">
+          {groupSize} Project
+        </p>
+        <h4
+          class="text-neutral-content prose prose-2xl pt-2 pb-0 leading-tight font-bold"
+        >
+          {title}
+        </h4>
 
-        <p class="text-neutral-content italic prose prose-xl">{groupSize} Project</p>
-        <h4 class="text-neutral-content prose prose-2xl pt-2 pb-0 leading-tight font-bold">{title}</h4>
-
-      <p class="text-neutral-content prose prose-xl pb-2">{descr}</p>
-      <div class="flex flex-wrap gap-2 py-2">
-        {#each badges as badge}
-        <div class="badge badge-accent text-xl p-4">
-        {badge}  
+        <p class="text-neutral-content prose prose-xl pb-2">{descr}</p>
+        <div class="flex flex-wrap gap-2 py-2">
+          {#each badges as badge}
+            <div class="badge badge-accent text-xl p-4">
+              {badge}
+            </div>
+          {/each}
         </div>
-        {/each}
-        </div>
+      </div>
     </div>
-  </div>
-</a>
+  </a>
 </div>

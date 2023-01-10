@@ -1,11 +1,9 @@
 <script>
-    import Badge from "../lib/components/Badge.svelte";
-
+  import Badge from "../lib/components/Badge.svelte";
+  import ButtonLink from "$lib/components/ButtonLink.svelte";
 </script>
-<div
-  id="welcomegrid"
-  class="md:grid md:grid-cols-4"
->
+
+<div id="welcomegrid" class="md:grid md:grid-cols-4">
   <div id="welcometext" class="col-start-1 md:col-end-3">
     <h1 id="welcome" class="mb-0">Hi, I'm David Bång!</h1>
     <p class="">
@@ -13,15 +11,22 @@
       transforming an abstract gameplay idea into a concrete system that the
       user can interact with.
     </p>
-    <Badge>C#</Badge>
-    <Badge>C++</Badge>
-    <Badge>Lua</Badge>
-    <Badge>Unreal Engine</Badge>
-    <Badge>Unity</Badge>
-    <Badge>LÖVE framework</Badge>
+    <ButtonLink href="/pages/about">More about me</ButtonLink>
+    <div class="pt-4">
+      <Badge>C#</Badge>
+      <Badge>C++</Badge>
+      <Badge>Lua</Badge>
+      <Badge>Unreal Engine</Badge>
+      <Badge>Unity</Badge>
+      <Badge>LÖVE framework</Badge>
+    </div>
   </div>
   <div class="avatar md:col-start-4 not-prose w-fit h-fit">
-    <img src="/profilepic2.jpg" alt="david" class="w-80 h-80 border-base-300  max-w-xs max-h-xs border-8 rounded-xl"/>
+    <img
+      src="/profilepic2.jpg"
+      alt="david"
+      class="w-80 h-80 border-base-300  max-w-xs max-h-xs border-8 rounded-xl"
+    />
   </div>
 </div>
 

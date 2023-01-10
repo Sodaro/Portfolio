@@ -6,17 +6,17 @@
   <h2 class="">Featured Projects</h2>
   <div class="games flex flex-col w-full h-fit lg:flex-row lg:flex-wrap">
     <ProjectCard
-      dir="projects/bomberbots"
+      dir="pages/bomberbots"
       src="/projectmedia/bomberbots/gameplay_game3.mp4"
       alt="Video showing 'Hello World' be encrypted on an EnigmaMachine"
       title="Bömberbots"
       descr="Bomberman clone made with Tomas Wallin"
-      groupSize="Group"
+      groupSize="Two Person"
       badges={["Lua", "LÖVE framework"]}
     />
 
     <ProjectCard
-      dir="projects/enigma-machine"
+      dir="pages/enigma-machine"
       src="/projectmedia/UnrealEnigmaMachine2.mp4"
       alt="Video showing 'Hello World' be encrypted on an EnigmaMachine"
       title="Enigma Machine"
@@ -25,7 +25,7 @@
       badges={["C++", "Unreal Engine", "Simulation"]}
     />
     <ProjectCard
-      dir="/projects/addons"
+      dir="/pages/addons"
       src="projectmedia/addons/shorthidebars.mp4"
       alt="a screenshot from World of Warcraft showing 4 green rectangles in debug view"
       title="WoW Addons"
@@ -34,7 +34,7 @@
       badges={["Lua", "UI", "Game Modification"]}
     />
     <ProjectCard
-      dir="/projects/pumpkin-boy"
+      dir="/pages/pumpkin-boy"
       posterSrc="/projectmedia/pumpkin/pumpkinboy.png"
       alt="The pumpkin boy character with the head and body on a switch and an open door"
       title="Pumpkin Boy"
@@ -43,7 +43,7 @@
       badges={["C#", "Unity", "Gameplay"]}
     />
     <!-- <ProjectCard
-      dir="/projects/bonkers"
+      dir="/pages/bonkers"
       posterSrc="/projectmedia/bonkers/cover2.png"
       alt="The pumpkin boy character with the head and body on a switch and an open door"
       title="Bonkers"

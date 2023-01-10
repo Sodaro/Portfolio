@@ -41,6 +41,12 @@
         <ProjectsList />
       </ul>
     </div>
+    <div class="item italic hover:bg-base-200">
+      <a href="/" class="flex flex-col">
+        <p class="text-lg md:text-2xl 2xl:text-5xl font-bold">David Bång</p>
+        <p class="text-md md:text-xl 2xl:text-2xl">Portfolio</p>
+      </a>
+    </div>
     <label
       class="btn btn-outline w-full swap swap-rotate p-0 self-center w-fit"
     >
