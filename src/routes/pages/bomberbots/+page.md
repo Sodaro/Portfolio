@@ -35,7 +35,7 @@ Initially we set out to make a game inspired by a wave-based defense game inspir
 
 ## Development
 
-We both worked on a lot of different areas of the game, having no clear designated areas, however among other things, Tomas created the ECS structure which was integral to the project.
+We both worked on a lot of different areas of the game, with no clear designated individual focus areas. However, among other things, Tomas created the ECS structure which was integral to the project.
 
 Some of my main contributions were the <TextLink href="">Spatial Hash Grid</TextLink> used for our collision system, render order sorting, and some debug tools (used to check performance and more easily handle debug drawing.)
 
