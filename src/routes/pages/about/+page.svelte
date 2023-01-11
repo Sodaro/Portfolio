@@ -1,7 +1,12 @@
 <article class="lg:mx-8">
     <h1>About me</h1>
     <div class="flex flex-col lg:flex-row gap-4 lg:gap-12">
-        <p class="pt-0 mt-0">
+        <img
+            src="/profilepic3.png"
+            alt="David Bång"
+            class="not-prose w-96 h-96 p-0 m-0 min-w-60 min-h-60 lg:order-last"
+        />
+        <p class="pt-0 mt-0 lg:order-first">
             I have been interested in game development for a long time. My first
             experience was with Valve's "Hammer" Editor, but I later moved to
             GameMaker and Unity where I started to learn how to program. In
@@ -18,10 +23,5 @@
             time, as solving problems together is both fun and an opportunity to
             learn something new!
         </p>
-        <img
-            src="/profilepic3.png"
-            alt="David Bång"
-            class="not-prose w-96 h-96 p-0 m-0 min-w-60 min-h-60"
-        />
     </div>
 </article>
