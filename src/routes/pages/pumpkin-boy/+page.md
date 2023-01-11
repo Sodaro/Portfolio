@@ -5,6 +5,7 @@
     import TextLink from "$lib/components/TextLink.svelte";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
     import MDVideo from "$lib/components/MDVideo.svelte";
+    import YoutubeVid from "$lib/components/YoutubeVid.svelte";
 </script>
 
 <svelte:head>
@@ -25,9 +26,11 @@
 ## About
 Pumpkin Boy is a 3D puzzle we developed in 2 weeks total as it was to be shown at Museum of Technology in Stockholm.
 
-We were 8 people in total working on the game: 3 designers, 3 programmers, and 2 artists (listed in Team section at the bottom.) <TextLink href="https://github.com/Nitintito">Jason F</TextLink> worked on the event system used in all the puzzles, <TextLink href="https://ruthenium44.wixsite.com/portfolio">Ruta S</TextLink> worked on a Tween system and shaders, and I worked on the player mechanics.
+We were 8 people in total working on the game: 3 designers, 3 programmers, and 2 artists (listed in Team section at the bottom.) <TextLink href="https://github.com/Nitintito">Jason F</TextLink> worked on an event system used in all the puzzles, <TextLink href="https://ruthenium44.wixsite.com/portfolio">Ruta S</TextLink> created a Tween system used throughout the game, and on shaders. I worked on the player mechanics and movement.
 
+### Our Trailer:
 
+<YoutubeVid src="https://www.youtube.com/embed/CqSOKka4C28" title="FG21-FT GP1 - Pumpkin Boy"/>
 
 ## Implementation
 
