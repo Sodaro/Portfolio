@@ -38,10 +38,10 @@ I checked the API and found features that allow you to parse received messages a
 
 The message is split on whitespace to get all the parameters provided after "/scf". The first parameter is the operation, and the rest is data. My way of still being able to have both a way to filter out sentences, and a way to quickly add multiple words, is to have sentences require '_' to combine them. This way typing "/scf add hello world" would filter out any messages containing either "hello" or "world", whereas typing "/scf add hello_world" would only filter out messages containing the sequence "hello world".
 
-<Collapse title="Chatfilter Code">
+<!-- <Collapse title="Chatfilter Code">
 
     <SCF_Code />
-</Collapse>
+</Collapse> -->
 
 
 <MDVideo width="1280" height="720" src="/projectmedia/addons/chatfilter.mp4" alt="video shows messages in wow chat appearing, chat filters getting added and then messages filtered appearing in yellow"/>

@@ -2,13 +2,14 @@
     export let href = "";
     export let isGithubLink = false;
     export let isDownloadButton = false;
+    export let isExternalLink = true;
 </script>
 
 <a
     {href}
-    target="_blank"
+    target={isExternalLink == true ? "_blank" : "_self"}
     class="not-prose btn btn-accent font-bold rounded normal-case no-underline text-lg"
-    rel="noopener noreferrer"
+    rel={isExternalLink == true ? "noopener noreferrer" : ""}
     role="button"
 >
     <div class="flex gap-x-4 not-prose text-center items-center">
@@ -44,7 +45,7 @@
         <p class="text-accent-content">
             <slot />
         </p>
-        {#if isDownloadButton == false}
+        {#if isExternalLink == true && !isDownloadButton}
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 stroke="currentcolor"

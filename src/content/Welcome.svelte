@@ -11,7 +11,9 @@
       transforming an abstract gameplay idea into a concrete system that the
       user can interact with.
     </p>
-    <ButtonLink href="/pages/about">More about me</ButtonLink>
+    <ButtonLink href="/pages/about" isExternalLink="false"
+      >More about me</ButtonLink
+    >
     <div class="pt-4">
       <Badge>C#</Badge>
       <Badge>C++</Badge>
