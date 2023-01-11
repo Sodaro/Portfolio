@@ -149,7 +149,7 @@
       <label class="btn btn-outline w-full swap swap-rotate p-0 self-center">
         <div class="col-start-1 p-4">Toggle theme</div>
         <input
-          id="darkcb2"
+          id="darkcb"
           type="checkbox"
           on:click={handleToggle}
           data-act-class="ACTIVECLASS"

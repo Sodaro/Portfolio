@@ -13,11 +13,13 @@
     themeChange(false);
 
     var theme = localStorage.theme;
-    var stored_theme = "theme" in localStorage;
-    var should_use_light =
-      theme === "light" ||
-      (!stored_theme &&
-        window.matchMedia("(prefers-color-scheme: light)").matches);
+    // var stored_theme = "theme" in localStorage;
+    var should_use_light = theme === "light";
+
+    // var should_use_light =
+    //   theme === "light" ||
+    //   (!stored_theme &&
+    //     window.matchMedia("(prefers-color-scheme: light)").matches);
 
     if (should_use_light) {
       document.documentElement.classList.remove("dark");

@@ -20,7 +20,7 @@
             class="btn btn-outline rounded"
             role="button"
         >
-            <div class="normal-case h-full">Enigma Machine</div>
+            <div class="normal-case">Enigma Machine</div>
         </a>
     </li>
     <li>

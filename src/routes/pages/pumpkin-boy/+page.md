@@ -1,5 +1,5 @@
 <script>
-    import SectionComponent from "$lib/components/SectionComponent.svelte";
+    import ArticleComponent from "$lib/components/ArticleComponent.svelte";
     import Team from "$lib/components/Team.svelte";
     import Summary from "$lib/components/Summary.svelte";
     import TextLink from "$lib/components/TextLink.svelte";
@@ -11,7 +11,7 @@
 <title>DavidB | Pumpkin Boy</title>
 </svelte:head>
 
-<SectionComponent>
+<ArticleComponent>
 
 # Pumpkin boy
 
@@ -64,4 +64,4 @@ This was the first gameproject I did as part of the Futuregames education. Prior
 
 <Team developers={{programmers:["David Bång", "Ruta Sapokaite", "Jason Sandelin Francis"], designers:["Joshua Ásberg", "Set Engberg", "Dani Vitelli"], artists:["Sandra Pärnaste", "Wiktor Kaluba"]}} />
 
-</SectionComponent>
+</ArticleComponent>

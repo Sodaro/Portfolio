@@ -5,7 +5,7 @@
     import RotorEncryption from "$lib/snippets/rotorencryption.md";
     import EnigmaEncryption from "$lib/snippets/enigmaencryption.md";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
-    import SectionComponent from "$lib/components/SectionComponent.svelte";
+    import ArticleComponent from "$lib/components/ArticleComponent.svelte";
     import Summary from "$lib/components/Summary.svelte";
     import TextLink from "$lib/components/TextLink.svelte";
 </script>
@@ -14,7 +14,7 @@
 <title>Enigma Machine | David Bång</title>
 </svelte:head>
 
-<SectionComponent>
+<ArticleComponent>
 
 # Enigma Machine Project
 
@@ -103,4 +103,4 @@ When a key is pressed I call EncodeLetter with the alphabet position of the lett
 
 </Collapse>
 
-</SectionComponent>
+</ArticleComponent>

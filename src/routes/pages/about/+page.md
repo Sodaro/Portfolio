@@ -1,7 +1,7 @@
 <script>
-    import SectionComponent from "$lib/components/SectionComponent.svelte";
+    import ArticleComponent from "$lib/components/ArticleComponent.svelte";
 </script>
-<SectionComponent>
+<ArticleComponent>
 
 # About me
 I have been interested in game development for a long time. While I had
@@ -12,4 +12,4 @@ language and game-engine agnostic, as some are better suited for certain tasks t
 
 As a person I strive to always improve and not stagnate.
 As a team-member I help others if I am able, and care more about what is best for the group or game rather than sit in isolation and focus on my own stuff.
-</SectionComponent>
+</ArticleComponent>

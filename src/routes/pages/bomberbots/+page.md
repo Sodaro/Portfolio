@@ -1,7 +1,7 @@
 <script>
     import MDVideo from "$lib/components/MDVideo.svelte"
     import Collapse from "$lib/components/Collapse.svelte";
-    import SectionComponent from "$lib/components/SectionComponent.svelte";
+    import ArticleComponent from "$lib/components/ArticleComponent.svelte";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
     import Summary from "$lib/components/Summary.svelte";
     import TextLink from "$lib/components/TextLink.svelte";
@@ -11,7 +11,7 @@
 <title>Bömberbots | David Bång</title>
 </svelte:head>
 
-<SectionComponent>
+<ArticleComponent>
 
 # Bömberbots
 
@@ -106,4 +106,4 @@ This is one of the largest projects developed outside of school that I have fini
 
 Despite the project not becoming the game that we originally planned, I am very happy with it!
 
-</SectionComponent>
+</ArticleComponent>

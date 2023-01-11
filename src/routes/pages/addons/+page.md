@@ -2,7 +2,7 @@
     import MDVideo from "$lib/components/MDVideo.svelte"
     import Collapse from "$lib/components/Collapse.svelte";
     import ButtonLink from "$lib/components/ButtonLink.svelte";
-    import SectionComponent from "$lib/components/SectionComponent.svelte"
+    import ArticleComponent from "$lib/components/ArticleComponent.svelte"
     import SCF_Code from "$lib/snippets/chatfilter.md"
     import SBH_BarHider from "$lib/snippets/barhider.md"
 </script>
@@ -11,7 +11,7 @@
 <title>WoW Addons | David Bång</title>
 </svelte:head>
 
-<SectionComponent>
+<ArticleComponent>
 
 # WoW Addons
 
@@ -72,4 +72,4 @@ The resulting solution I came up with at the time was to have an additional larg
 
 
 
-</SectionComponent>
+</ArticleComponent>
