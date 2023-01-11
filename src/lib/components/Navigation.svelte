@@ -14,7 +14,7 @@
   }
 </script>
 
-<nav class="sticky top-0 lg:h-full lg:w-3/12 z-50 bg-base-100 not-prose">
+<nav class="sticky top-0 lg:h-full lg:w-2/12 z-50 bg-base-100 not-prose">
   <div class="h-fit z-50 navbar lg:hidden w-full flex justify-between">
     <div id="burgermenu" class="dropdown">
       <label tabindex="-1" class="btn btn-ghost" for="burgermenu">
@@ -81,7 +81,10 @@
           </a>
         </div>
 
-        <div id="navicons" class="right-0 flex flex-row gap-4 justify-start">
+        <div
+          id="navicons"
+          class="flex flex-row lg:gap-2 xl:gap-8 justify-start"
+        >
           <a
             href="https://www.linkedin.com/in/david-b%C3%A5ng-51742921a/"
             target="_blank"
@@ -146,7 +149,9 @@
       <ProjectsList />
 
       <div class="divider" />
-      <label class="btn btn-outline w-full swap swap-rotate p-0 self-center">
+      <label
+        class="btn btn-outline w-full swap swap-rotate p-0 self-center w-fit normal-case"
+      >
         <div class="col-start-1 p-4">Toggle theme</div>
         <input
           id="darkcb"

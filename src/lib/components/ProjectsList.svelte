@@ -3,8 +3,8 @@
         <div class="normal-case">About</div>
     </a>
 </div>
-<h2 class="font-bold">Featured Projects</h2>
-<ul class="menu gap-4 normal-case">
+
+<ul class="menu gap-2 normal-case">
     <li>
         <a
             href="/pages/bomberbots"

@@ -91,16 +91,22 @@ When a key is pressed I call EncodeLetter with the alphabet position of the lett
 <EnigmaStruct />
 
 </Collapse>
-
+<br/>
 <Collapse title="Individual Rotor Encryption Snippet">
 
 <RotorEncryption />
-</Collapse>
 
+</Collapse>
+<br/>
 <Collapse title="Machine Encryption Snippet">
 
 <EnigmaEncryption />
 
 </Collapse>
+
+## Learning outcomes so far
+This project taught me a lot already. I have gotten a lot more experience in working with Unreal Engine C++ and its custom implementation of fstructs and ubojects, learned about the inner workings of an Enigma Machine, and reverse engineering based on expected results.
+
+I have more features planned that haven't made it in yet: I want to implement a plug-board with cable connectors, and have the player to walk around and find machine parts, and have more things to decrypt!
 
 </ArticleComponent>

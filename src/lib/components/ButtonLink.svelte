@@ -12,7 +12,7 @@
     rel={isExternalLink == true ? "noopener noreferrer" : ""}
     role="button"
 >
-    <div class="flex gap-x-4 not-prose text-center items-center">
+    <div class="flex lg:gap-x-2 xl:gap-x-4 not-prose text-center items-center">
         {#if isGithubLink}
             <svg
                 xmlns="http://www.w3.org/2000/svg"

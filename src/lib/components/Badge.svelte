@@ -1,10 +1,14 @@
 <script>
-    export let size="text-xl"
-    export let padding="p-4"
-    export let hasFill="true"
-    export let color="badge-accent"
+    export let size = "";
+    export let padding = "p-4";
+    export let hasFill = "false";
+    export let color = "badge-neutral";
 </script>
 
-<div class="badge {color} {hasFill === "true" ? "" : "badge-outline"} {size} {padding}">
-    <slot/>
+<div
+    class="badge badge-md {color} {hasFill === 'false'
+        ? 'badge-outline'
+        : ''} {size} {padding}"
+>
+    <slot />
 </div>
