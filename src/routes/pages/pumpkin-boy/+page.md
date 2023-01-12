@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-<title>DavidB | Pumpkin Boy</title>
+<title>Pumpkin Boy | David Bång</title>
 </svelte:head>
 
 <ArticleComponent>
