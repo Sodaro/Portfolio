@@ -46,7 +46,7 @@ Whenever we were done with a feature we would review each other's code before it
     Spatial Hash Grid
 </ButtonLink>
 
-A spatial hash grid is used to store objects based on their position and size, in a grid. By doing this we are able to only check AABB-collision against objects in adjacent grid cells.
+A spatial hash grid is used to store objects based on their position and size in a grid. By doing this we are able to only check AABB-collision against objects in adjacent grid cells.
 
 The way the objects are stored in cells is by converting the size and position from world-space into grid-space, then finding the minimum and maximum indices (position - size, position + size) that they occupy and generate keys for these indices which we kept in the format "x_index;y_index". After that we could get the objects from the cells we wanted by just passing in the cell-indices.
 
