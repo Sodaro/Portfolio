@@ -36,6 +36,14 @@
         tabindex="-1"
         class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 w-52 z-50"
       >
+        <div class="flex flex-col gap-4 lg:justify-start">
+          <ButtonLink isDownloadButton="true" href="/davidbang_resume.pdf"
+            >Resume</ButtonLink
+          >
+          <ButtonLink href="https://github.com/Sodaro" isGithubLink="true">
+            Github
+          </ButtonLink>
+        </div>
         <ProjectsList />
       </ul>
     </div>
