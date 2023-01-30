@@ -3,7 +3,7 @@
     <div class="flex flex-col xl:flex-row gap-4 xl:gap-12">
         <div class="xl:w-2/5 xl:order-last">
             <img
-                src="/pfp1.jpg"
+                src="/pfp6.jpg"
                 alt="David Bång"
                 class="not-prose object-cover p-0 m-0 "
             />

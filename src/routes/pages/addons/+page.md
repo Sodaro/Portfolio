@@ -21,6 +21,10 @@ AddOns are runtime Lua scripts which use the API provided by the developers to m
 
 I try to write focused addons, with the goal of solving one "problem" per addon. This lets me easily use them in combination with other addons without having conflicts.
 
+<ButtonLink isGithubLink=true href="https://github.com/SodaAddons">
+    My Github Addon Collection 
+</ButtonLink>
+
 ## Highlighted Addons
 
 ### SodaChatFilter
