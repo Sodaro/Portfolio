@@ -3,9 +3,16 @@
   import ButtonLink from "$lib/components/ButtonLink.svelte";
 </script>
 
-<div id="welcomegrid" class="md:grid gap-x-4 2xl:grid-cols-4">
-  <div id="welcometext" class="col-start-1 md:col-end-3">
-    <h1 id="welcome" class="mb-0">Hi, I'm David Bång!</h1>
+<div id="welcomegrid" class="flex flex-col xl:flex-row">
+  <div id="welcometext" class="">
+    <h1 id="welcome" class="">Hi, I'm David Bång!</h1>
+    <div class="avatar xl:hidden h-1/2 max-w-md">
+      <img
+        src="/croptest.jpg"
+        alt="david"
+        class="border-base-300 border-8 rounded-xl object-fill"
+      />
+    </div>
     <p class="">
       I'm a game programmer with a special interest in gameplay systems. I love
       transforming an abstract gameplay idea into a concrete system that the
@@ -22,30 +29,27 @@
       <Badge>Unity</Badge>
       <Badge>LÖVE framework</Badge>
     </div>
+    <div class="flex h-fit">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-10 w-10 self-center inline"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fillRule="evenodd"
+          d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+          clipRule="evenodd"
+        />
+      </svg>
+      <p class="">Stockholm, Sweden</p>
+    </div>
   </div>
-  <div class="avatar lg:col-start-4 not-prose w-fit h-fit">
+  <div class="hidden xl:flex m-0 xl:order-last">
     <img
-      src="/profilepic2.jpg"
+      src="/croptest.jpg"
       alt="david"
-      class="w-80 h-80 border-base-300  max-w-xs max-h-xs border-8 rounded-xl"
+      class="m-0 p-0 h-2/3 border-base-300 border-8 rounded-xl object-cover"
     />
-  </div>
-</div>
-
-<div class="flex flex-col pt-4 pb-0 h-fit">
-  <div class="flex h-fit">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-10 w-10 self-center inline"
-      viewBox="0 0 20 20"
-      fill="currentColor"
-    >
-      <path
-        fillRule="evenodd"
-        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-        clipRule="evenodd"
-      />
-    </svg>
-    <p class="">Stockholm, Sweden</p>
   </div>
 </div>
