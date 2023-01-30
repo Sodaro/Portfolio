@@ -27,7 +27,7 @@
 Bömberbots is a Bomberman clone that I developed together with <TextLink href="https://tomaswallin.se/#/">Tomas Wallin</TextLink>. The goal with the project was to improve our Lua knowledge and to make a smaller game using the LÖVE framework. 
 
 ## Introduction
-Initially we set out to make a game inspired by a wave-based defense game inspired by the mod "Enfo's Team Survival" for Warcraft 3, where you control one character that gains items and abilities as you fight waves of monsters. While the initial concept of the game was scrapped in favor of creating a basic Bomberman game, we were able to salvage a lot of code we had previously written.
+Initially we set out to make a game inspired by a Warcraft3 mod called "Enfo's Team Survival", which is a "tower-defense" game where you control one character that gains items and abilities as you fight waves of monsters. This side-project ended up clashing a bit with school scheduling, so we ended up scrapping/scaling down the initial concept in favor of creating a Bomberman game. Luckily, we were able to reuse our tools and systems!  
 
 <MDVideo width="854" height="480" autoPlay="true" src="/projectmedia/bomberbots/initial_prototype.mp4" alt="two characters moving and shooting different projectiles at different speeds"/>
 
