@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>About | David Bång</title>
+</svelte:head>
+
 <article class="lg:mx-8">
     <h1>About me</h1>
     <div class="flex flex-col xl:flex-row gap-4 xl:gap-12">
