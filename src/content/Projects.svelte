@@ -12,13 +12,13 @@
       title="Bömberbots"
       descr="Bomberman clone made with Tomas Wallin"
       groupSize="Two Person"
-      badges={["Lua", "LÖVE framework"]}
+      badges={["Lua", "LÖVE framework", "Collisions", "Debugging", "Rendering"]}
     />
 
     <ProjectCard
       dir="pages/enigma-machine"
-      src="/projectmedia/UnrealEnigmaMachine2.mp4"
-      alt="Video showing 'Hello World' be encrypted on an EnigmaMachine"
+      src="/projectmedia/enigma/decryption.mp4"
+      alt="Machine-settings being configured and an encrypted message being decrypted, revealing the text 'Hello World'"
       title="Enigma Machine"
       descr="An interactible Enigma Machine simulator"
       groupSize="Solo"
@@ -40,7 +40,7 @@
       title="Pumpkin Boy"
       descr="Thirdperson Puzzle game made in Unity"
       groupSize="Group"
-      badges={["C#", "Unity", "Gameplay"]}
+      badges={["C#", "Unity", "Gameplay", "Physics"]}
     />
     <!-- <ProjectCard
       dir="/pages/bonkers"

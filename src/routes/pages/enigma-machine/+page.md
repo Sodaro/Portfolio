@@ -17,6 +17,7 @@
 <ArticleComponent>
 
 # Enigma Machine Project
+<MDVideo width="854" height="480" src="/projectmedia/enigma/decryption.mp4" alt="Machine-settings being configured and an encrypted message being decrypted, revealing the text 'Hello World'"/>
 
 <Summary devTime="1 month" teamSize="1" engine="Unreal Engine 4" language="C++" summary="Player movement, head throwing (Projectile Motion) with preview line, and box pushing"/>
 
@@ -45,7 +46,7 @@ I did not want to look at any existing algorithms, as I wanted to try and figure
 ### How it works
 A typical machine has an input board, plugboard, lampboard, three RotorWheels, and a reflector. The rotor wheels have unique configs but they behave like rotating substitution ciphers, so RotorWheel I in position 0 might take an A as input and output it as K, whereas another wheel might output the same as X. The wheels can be placed in any of the three positions, and the initial rotation offset and ring setting (which shifts the wiring around) can also be changed.
 
-<MDVideo width="640" height="360" autoPlay="true" src="/projectmedia/enigmamachine_rotorwheel.mp4" alt="a video showing a breakdown of a rotor, first showing the rotor plugs and wires rotating and then showing the wiring rotating separately "/>
+<MDVideo width="640" height="360" autoPlay="true" src="/projectmedia/enigma/enigmamachine_rotorwheel.mp4" alt="a video showing a breakdown of a rotor, first showing the rotor plugs and wires rotating and then showing the wiring rotating separately "/>
 
 The first wheel rotates every time a key is pressed, and when it reaches a so-called "turnover notch position" it will rotate the next wheel, which in turn will rotate the last wheel when it reaches its own turnover position, similarly to an odometer. The rotation behaves like an index offset, which makes it so pressing the same key multiple times won't output the same letter multiple times in a row. At the end of the machine, there is a "reflector" that has pairs of letters mapped together (where a regular wheel would map A to B but not have B mapped to A, the reflector maps A to B and B to A).
 

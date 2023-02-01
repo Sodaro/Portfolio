@@ -15,6 +15,8 @@
 
 # Bömberbots
 
+<MDVideo width="854" height="480" src="/projectmedia/bomberbots/gameplay_game3.mp4" alt="the finished bomberman game with players walking around and blowing stuff up with bombs"/>
+
 <Summary devTime="4 months" teamSize="2" engine="LÖVE" language="Lua" summary="Debug tools, render sorting, asset loader"/>
 
 <br>
@@ -27,11 +29,9 @@
 Bömberbots is a Bomberman clone that I developed together with <TextLink href="https://tomaswallin.se/#/">Tomas Wallin</TextLink>. The goal with the project was to improve our Lua knowledge and to make a smaller game using the LÖVE framework. 
 
 ## Introduction
-Initially we set out to make a game inspired by a Warcraft3 mod called "Enfo's Team Survival", which is a "tower-defense" game where you control one character that gains items and abilities as you fight waves of monsters. This side-project ended up clashing a bit with school scheduling, so we ended up scrapping/scaling down the initial concept in favor of creating a Bomberman game. Luckily, we were able to reuse our tools and systems!  
-
-<MDVideo width="854" height="480" autoPlay="true" src="/projectmedia/bomberbots/initial_prototype.mp4" alt="two characters moving and shooting different projectiles at different speeds"/>
-
-<MDVideo width="854" height="480" autoPlay="true" src="/projectmedia/bomberbots/gameplay_game3.mp4" alt="the finished bomberman game with players walking around and blowing stuff up with bombs"/>
+Initially we set out to make a game inspired by a Warcraft3 mod called "Enfo's Team Survival", which is a "tower-defense" game where you control one character that gains items and abilities as you fight waves of monsters.
+<MDVideo width="640" height="360" autoPlay="true" src="/projectmedia/bomberbots/initial_prototype.mp4" alt="two characters moving and shooting different projectiles at different speeds"/>
+This side-project ended up clashing a bit with school scheduling, so we ended up scrapping/scaling down the initial concept in favor of creating a Bomberman game. Luckily, we were able to reuse our tools and systems!  
 
 ## Development
 

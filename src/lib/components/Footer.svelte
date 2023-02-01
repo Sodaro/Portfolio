@@ -2,7 +2,7 @@
   <div class="flex justify-center px-8 w-full">
     <p class="text-sm italic">
       Webpage made by me using SvelteKit, Tailwind CSS and daisyUI. Updated
-      January 30th 2023.
+      February 1st 2023.
     </p>
   </div>
 </footer>
