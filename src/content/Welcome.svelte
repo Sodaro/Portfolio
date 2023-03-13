@@ -9,7 +9,7 @@
     <div class="avatar xl:hidden h-1/2 max-w-md">
       <img
         src="/croptest.jpg"
-        alt="david"
+        alt=""
         class="border-base-300 border-8 rounded-xl object-fill"
       />
     </div>
@@ -48,7 +48,7 @@
   <div class="hidden xl:flex m-0 xl:order-last">
     <img
       src="/croptest.jpg"
-      alt="david"
+      alt=""
       class="m-0 p-0 h-2/3 border-base-300 border-8 rounded-xl object-cover"
     />
   </div>
